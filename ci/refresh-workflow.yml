@@ -1,0 +1,175 @@
+# ============================================================
+# proxy_collector — 云端自动刷新
+#
+# 每 6 小时在 GitHub 的 Linux runner 上跑一次完整流水线，并把产物
+# 强制推送到 output 分支，供手机/客户端用固定链接订阅。
+#
+# 与本地运行的区别：
+#   * PCOLL_SKIP_DEPLOY=1 —— 云端没有本机 Clash Verge，跳过部署步骤
+#   * mihomo 用官方 Linux 核心，放进 PATH 并用 PCOLL_MIHOMO 指过去
+#   * 跨轮状态（稳定性 / 来源质量 / 上一轮产物）用 actions/cache 持久化
+#   * 测速是「Azure 机房 → 节点」的视角，不是你家的网速；
+#     配置里的 AUTO 组是 url-test，客户端会用自己的网络重新选优
+# ============================================================
+name: refresh
+
+on:
+  schedule:
+    # 每 6 小时一次（UTC）。GitHub 的定时任务可能出现数分钟到数十分钟的延迟，属正常。
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      skip_http:
+        description: '跳过 http_test，复用缓存的候选池（快很多，但仍会重新测速）'
+        type: boolean
+        default: false
+
+# 需要 contents:write 才能把产物推到 output 分支
+permissions:
+  contents: write
+
+# 同一时刻只跑一轮，避免两轮互相覆盖跨轮状态
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 安装依赖
+        run: |
+          set -euo pipefail
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 恢复跨轮状态
+        id: state
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            node_stability.json
+            source_quality.json
+            output-filtered-fast.yaml
+            output-filtered-http.yaml
+            candidates/legacy_sources.json
+            candidates/aggregator_uris.txt
+            candidates/aggregator_sources.json
+            outputs
+          key: pcoll-state-${{ github.run_id }}
+          restore-keys: |
+            pcoll-state-
+
+      - name: 安装 mihomo 核心
+        run: |
+          set -euo pipefail
+          mkdir -p "$GITHUB_WORKSPACE/.ci-tools"
+          API=https://api.github.com/repos/MetaCubeX/mihomo/releases/latest
+          TAG=$(curl -fsSL "$API" | jq -r .tag_name)
+          # compatible = 基线 x86-64 构建，Azure runner 的 CPU 微架构不固定，用它最稳
+          NAME=$(curl -fsSL "$API" | jq -r '.assets[].name' \
+                 | grep -E '^mihomo-linux-amd64-compatible-v[0-9.]+\.gz$' | head -1)
+          if [ -z "$NAME" ]; then
+            NAME=$(curl -fsSL "$API" | jq -r '.assets[].name' \
+                   | grep -E '^mihomo-linux-amd64-v1-v[0-9.]+\.gz$' | head -1)
+          fi
+          if [ -z "$NAME" ]; then
+            echo "!! 在 $TAG 里找不到可用的 linux-amd64 mihomo 资产"
+            curl -fsSL "$API" | jq -r '.assets[].name' | grep linux-amd64 || true
+            exit 1
+          fi
+          echo "下载 $TAG / $NAME"
+          curl -fsSL -o /tmp/mihomo.gz \
+            "https://github.com/MetaCubeX/mihomo/releases/download/$TAG/$NAME"
+          gunzip -f /tmp/mihomo.gz
+          install -m 0755 /tmp/mihomo "$GITHUB_WORKSPACE/.ci-tools/mihomo"
+          echo "$GITHUB_WORKSPACE/.ci-tools" >> "$GITHUB_PATH"
+          echo "PCOLL_MIHOMO=$GITHUB_WORKSPACE/.ci-tools/mihomo" >> "$GITHUB_ENV"
+          "$GITHUB_WORKSPACE/.ci-tools/mihomo" -v
+
+      - name: 运行流水线
+        env:
+          PCOLL_BASE: ${{ github.workspace }}
+          PCOLL_SKIP_DEPLOY: '1'
+          PYTHONUTF8: '1'
+          PYTHONIOENCODING: utf-8
+        run: |
+          set -euo pipefail
+          ARGS=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] \
+             && [ "${{ github.event.inputs.skip_http }}" = "true" ]; then
+            ARGS="--skip-http"
+          fi
+          echo ">>> python -u run_pipeline.py $ARGS"
+          python -u run_pipeline.py $ARGS 2>&1 | tee pipeline.log
+
+      - name: 校验产物
+        run: |
+          set -euo pipefail
+          for f in output-filtered-fast.yaml output-filtered-fast-mobile.yaml; do
+            if [ ! -s "$f" ]; then
+              echo "!! 产物缺失或为空: $f"
+              exit 1
+            fi
+            echo "$f : $(wc -c < "$f") 字节 / $(grep -c '^  - name:' "$f" || true) 个节点"
+          done
+
+      - name: 发布到 output 分支
+        run: |
+          set -euo pipefail
+          PUB="$(mktemp -d)"
+          cp output-filtered-fast.yaml output-filtered-fast-mobile.yaml "$PUB/"
+          cd "$PUB"
+          git init -q
+          git checkout -q -b output
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "refresh $(date -u '+%Y-%m-%d %H:%M')Z"
+          # 每次都是全新的孤儿提交，强制推送，避免仓库体积随轮次膨胀
+          git push -f \
+            "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" \
+            output:output
+
+      - name: 保存跨轮状态
+        if: success()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            node_stability.json
+            source_quality.json
+            output-filtered-fast.yaml
+            output-filtered-http.yaml
+            candidates/legacy_sources.json
+            candidates/aggregator_uris.txt
+            candidates/aggregator_sources.json
+            outputs
+          key: ${{ steps.state.outputs.cache-primary-key }}
+
+      - name: 写入运行摘要
+        if: success()
+        run: |
+          {
+            echo "## 刷新完成"
+            echo ""
+            echo "- 桌面端 Clash：\`${{ github.server_url }}/${{ github.repository }}/raw/output/output-filtered-fast.yaml\`"
+            echo "- 手机端 Clash：\`${{ github.server_url }}/${{ github.repository }}/raw/output/output-filtered-fast-mobile.yaml\`"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: 失败时保留日志
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-log
+          path: pipeline.log
+          if-no-files-found: ignore
