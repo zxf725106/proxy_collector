@@ -320,7 +320,9 @@ async def run_slice(nodes, wid, nbytes, timeout):
     try:
         proc = subprocess.Popen([mihomo, "-f", tmp], stdout=subprocess.DEVNULL,
                                 stderr=subprocess.DEVNULL,
-                                creationflags=subprocess.CREATE_NO_WINDOW)
+                                # CREATE_NO_WINDOW 只在 Windows 上存在；Linux 访问该属性会
+                                # AttributeError 直接崩掉测速。补齐项目其它 3 处已有的平台守卫。
+                                creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
         try:
             ready = False
             for _ in range(45):

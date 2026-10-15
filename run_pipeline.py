@@ -773,7 +773,13 @@ def main():
         raise SystemExit(1)
 
     run_step("make_mobile.py", FAST, "output-filtered-fast-mobile.yaml")
-    run_step("deploy_to_clash.py")
+    # 云端运行（GitHub Actions 等）没有本机 Clash Verge：deploy_to_clash.py 在配置
+    # 目录缺失时返回 rc=3，而 run_step 遇到非零码会 SystemExit(1)，会把整轮云任务
+    # 判为失败。设 PCOLL_SKIP_DEPLOY=1 即跳过部署，产物由外部步骤发布。
+    if os.environ.get("PCOLL_SKIP_DEPLOY", "0") not in ("0", "false", "False", ""):
+        log("(PCOLL_SKIP_DEPLOY 已设置：跳过 deploy_to_clash，产物交由外部发布)")
+    else:
+        run_step("deploy_to_clash.py")
     # 赛后按来源结算质量分（自动降权）；下一轮 collect_aggregator 会跳过被降权的源
     if os.path.exists("quality_report.py"):
         run_step("quality_report.py", "--fast", FAST)
