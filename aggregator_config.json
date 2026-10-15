@@ -1,0 +1,70 @@
+{
+  "_comment": "aggregator 移植层配置。付费订阅填 sources.paid_subscriptions.items；发现源填 discovery；crawlers/ 目录下 *.py（非下划线开头）自动注册。",
+
+  "network": {
+    "comment": "自动探测可用通道：先试 Clash 7897，再试环境变量代理，最后直连",
+    "proxy": "http://127.0.0.1:7897",
+    "probe_url": "https://api.github.com/rate_limit",
+    "timeout": 20
+  },
+
+  "sources": {
+    "paid_subscriptions": {
+      "enabled": true,
+      "priority": "primary",
+      "comment": "付费机场订阅主源。填入真实订阅 URL 后立即生效（无需改代码）",
+      "items": [
+        {
+          "name": "my-airport-1",
+          "url": "",
+          "format": "auto",
+          "push_to": ["desktop", "mobile"]
+        }
+      ]
+    },
+    "free_crawlers": {
+      "enabled": true,
+      "priority": "backup",
+      "comment": "扫描 crawlers/ 目录自动注册；config 里可单独开关/降权",
+      "crawlers": {}
+    }
+  },
+
+  "discovery": {
+    "enabled": true,
+    "github": {
+      "enabled": true,
+      "repos": [
+        "proxifly/free-proxy-list",
+        "Barabama/FreeNodes",
+        "Pawdroid/Free-servers"
+      ],
+      "topics": ["proxypool"],
+      "queries": [],
+      "max_repos": 3,
+      "commit_watch": true,
+      "commit_watch_commits": 2,
+      "max_urls": 20
+    },
+    "telegram": {
+      "enabled": false,
+      "use_api": true,
+      "channels": []
+    },
+    "twitter": {
+      "enabled": false,
+      "users": []
+    }
+  },
+
+  "quality": {
+    "enabled": true,
+    "state": "source_quality.json",
+    "comment": "被自动降权的源，本脚本下次运行会直接跳过"
+  },
+
+  "output": {
+    "uris_file": "candidates/aggregator_uris.txt",
+    "map_file": "candidates/aggregator_sources.json"
+  }
+}

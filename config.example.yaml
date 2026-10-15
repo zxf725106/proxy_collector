@@ -1,0 +1,76 @@
+# config.example.yaml —— 可安全入库的配置模板
+# 真实配置是同目录 config.yaml（已被 .gitignore 排除，其中含明文订阅 key）。
+# 用法：复制为 config.yaml，把所有 PUT_YOUR_KEY_HERE 换成真实值。
+# ----------------------------------------------------------------------
+subscriptions:
+- https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge.txt
+- https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge_yaml.yml
+- https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge.txt
+- https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_Sub.txt
+- https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/main/subscriptions/v2ray/all_sub.txt
+- https://raw.githubusercontent.com/barry-far/V2ray-Config/main/All_Configs_Sub.txt
+- https://raw.githubusercontent.com/xiaoji235/airport-free/main/v2ray.txt
+- https://raw.githubusercontent.com/rtwo2/FastNodes/main/sub/everything.txt
+- https://raw.githubusercontent.com/longlon/v2ray-config/main/All_Configs_Sub.txt
+- https://raw.githubusercontent.com/Danialsamadi/v2go/main/AllConfigsSub.txt
+- https://raw.githubusercontent.com/Danialsamadi/v2go/main/Sub1.txt
+- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/clash.yaml
+- https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt
+# [2026-09-12 移除] xyfqzy/free-nodes: nodes/v2ray.txt 路径失效(nodes/ 目录已删)；
+# 仓库已迁至自有域名 nodes.udptoos.com，但本机 TLS 不可达(HTTP 000)，暂无法替代
+- https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/server.txt
+- https://raw.githubusercontent.com/MohammadBahemmat/V2ray-Collector/main/all_servers.txt
+- https://raw.githubusercontent.com/Leon406/SubCrawler/main/sub/share/v2
+- https://raw.githubusercontent.com/ermaozi/get_subscribe/master/subscribe/v2ray.txt
+- https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt
+- https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt
+- https://raw.githubusercontent.com/freefq/free/master/v2
+- https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
+- https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list_raw.txt
+# [2026-09-12 移除] mfuu/v2ray 已 301 永久重定向到 mfuu/FreeProxies（后者已在下方订阅列表中）
+- https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/nodefree.txt
+- https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.txt
+- https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/nodev2ray.txt
+- https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/nodes.txt
+- https://raw.githubusercontent.com/snakem982/proxypool/main/source/v2ray-2.txt
+- https://sub.proxygo.org/v2ray.php?key=PUT_YOUR_KEY_HERE
+- https://raw.githubusercontent.com/RKPchannel/RKP_bypass_configs/main/blacklist.txt
+- https://raw.githubusercontent.com/RKPchannel/RKP_bypass_configs/main/whitelist.txt
+- https://raw.githubusercontent.com/Danialsamadi/v2go/main/Sub2.txt
+# [2026-09-12 移除] Danialsamadi/v2go: Sub3.txt 已删除（仓库现仅 Sub1/Sub2/AllConfigsSub，已被 AllConfigsSub 覆盖）
+- https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/extra_clash_config.yaml
+- https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/extra_nodes.txt
+- https://raw.githubusercontent.com/Pasimand/v2ray-config-agg/main/config.txt
+# --- 2026-08-15 全网新搜到的独立高质量源(实测验证) ---
+# Ruk1ng001/freeSub: 实测 279/475 存活 (58.7%), 与现有池重叠仅 3.4% -> 独立上游
+- https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml
+- https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/v2ray
+# rico-cell/clash-proxy-sub: 与现有池 0% 重叠, 每30分钟自更新(本次实测全死, 但作多样性补充)
+- https://raw.githubusercontent.com/rico-cell/clash-proxy-sub/main/clash_sub.yaml
+# --- 2026-09-12 补充截图推荐源(实测验证) ---
+# awesome-vpn/awesome-vpn: 聚合器, clash.yaml 标准 Clash 格式
+- https://raw.githubusercontent.com/awesome-vpn/awesome-vpn/master/clash.yaml
+# mfuu/FreeProxies: 独立仓库(非 mfuu/v2ray), sub.yaml Clash 格式 267KB
+- https://raw.githubusercontent.com/mfuu/FreeProxies/master/sub.yaml
+# ishalumi/proxy-node-collector: 每6小时聚合, nodes_base64.txt 全集
+- https://raw.githubusercontent.com/ishalumi/proxy-node-collector/main/output/nodes_base64.txt
+# xrayfree/free-ssr-ss-v2ray-vpn-clash: xrayvip 固定订阅, base64 编码
+- https://www.xrayvip.com/free.txt
+filter:
+  include_keywords: []
+  exclude_keywords: []
+latency_test:
+  enabled: true
+  timeout: 3
+  concurrency: 200
+  max_nodes: 20000
+  max_latency: 0
+  remove_unreachable: false
+  sort_by_latency: true
+# 超过 max_nodes 时使用稳定哈希抽样，避免每轮随机漂移
+sampling:
+  strategy: stable_hash
+  seed: proxy-collector-v1
+output: output.yaml
+mobile_output: output-mobile.yaml
+clash_config_dir: ''

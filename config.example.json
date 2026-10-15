@@ -1,0 +1,53 @@
+{
+  "sources": {
+    "paid_subscriptions": {
+      "enabled": true,
+      "priority": "primary",
+      "comment": "付费机场订阅作为主源（aggregator collect.py / domains 模式）",
+      "items": [
+        {
+          "name": "my-airport-1",
+          "url": "https://your-airport.example.com/link/XXXXXXXX?sub=1",
+          "format": "auto",
+          "push_to": ["desktop", "mobile"]
+        },
+        {
+          "name": "my-airport-2",
+          "url": "https://another.example.org/api/v1/client/subscript?token=YYYY",
+          "format": "auto",
+          "push_to": ["desktop"]
+        }
+      ]
+    },
+    "free_crawlers": {
+      "enabled": true,
+      "priority": "backup",
+      "comment": "免费聚合 crawler 作为备份源（扫描 crawlers/ 目录自动注册）",
+      "crawlers": {
+        "proxifly": { "enabled": true },
+        "free-proxy-list": { "enabled": true }
+      }
+    }
+  },
+  "validation": {
+    "comment": "沿用 proxy_collector 现有 mihomo HTTP 验证(http_test.py)，此处仅声明阈值",
+    "max_delay_ms": 1500,
+    "test_url": "https://www.google.com/generate_204",
+    "tcp_prescreen": true
+  },
+  "geo_filter": {
+    "enabled": true,
+    "keep": ["CN", "HK", "TW", "MO", "JP", "KR", "SG", "AU", "NZ"]
+  },
+  "output": {
+    "comment": "多端 + 多格式（需 subconverter 才出 singbox/v2ray）",
+    "targets": ["clash", "singbox"],
+    "desktop": { "file": "output.yaml" },
+    "mobile": { "file": "output-mobile.yaml" }
+  },
+  "scheduler": {
+    "comment": "可接系统 cron / 计划任务；全量测速去重不抽样",
+    "cron": "0 */6 * * *",
+    "full_rescan": true
+  }
+}

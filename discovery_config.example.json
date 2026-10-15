@@ -1,0 +1,33 @@
+{
+  "discovery": {
+    "github": {
+      "enabled": true,
+      "comment": "最可靠。建议设环境变量 GITHUB_TOKEN 提速率上限；需能访问 github.com(走Clash)",
+      "repos": ["proxifly/free-proxy-list"],
+      "topics": ["proxypool", "free-proxy", "v2ray", "clash"],
+      "queries": ["free proxy subscription", "clash proxy list"],
+      "max_repos": 20,
+      "commit_watch": true,
+      "comment_commit_watch": "监听最近 commit 抓新鲜节点(验证通过率远高于陈年老库)；需 GITHUB_TOKEN",
+      "commit_watch_commits": 5
+    },
+    "telegram": {
+      "enabled": false,
+      "comment": "需 TELEGRAM_API_ID/API_HASH/SESSION 才走稳；否则 t.me/s 网页抓取(脆弱)",
+      "use_api": true,
+      "channels": ["proxy_hub", "freev2ray", "vmess_pool"],
+      "limit": 50
+    },
+    "twitter": {
+      "enabled": false,
+      "comment": "X 已锁死，nitter 多挂，大概率空手。仅锦上添花，勿依赖",
+      "users": ["proxy_list_x", "freev2raydaily"],
+      "limit": 30
+    }
+  },
+  "resolve": {
+    "comment": "发现的是 URL/链接，需再经 subscription_parser.parse_subscription() 解析成 URI",
+    "auto_resolve": true,
+    "merge_into": "free_crawlers"
+  }
+}

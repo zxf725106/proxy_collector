@@ -1,0 +1,28 @@
+Proxy Collector 质量流水线改造验证报告
+
+验证时间：2026-09-12 21:10（GMT+8）
+
+一、已完成改造
+- parser.py：节点去重/来源对齐改为包含协议凭据摘要、TLS/SNI、传输层和插件参数的稳定身份指纹；不把敏感值写入指纹。
+- collector.py：超过 max_nodes 时由随机抽样改为稳定哈希抽样；来源映射改用新指纹。
+- collect_aggregator.py / quality_report.py：来源质量统计与最终 Clash 配置使用同一套节点身份。
+- output.py：Clash YAML 改为同目录临时文件 + fsync + 原子替换。
+- http_test.py / make_mobile.py：过滤结果和移动版配置改为原子写入。
+- run_pipeline.py：执行步骤固定工作目录；加入节点数、YAML、代理组引用质量门；部署前改为明确选择每个候选节点后，通过 mihomo mixed-port 做真实下载复测；复测失败自动回滚并停止部署。
+- deploy_to_clash.py：不再把未经过高速筛选的 HTTP 候选冒充高速精选，也不再生成空 profile。
+- config.yaml：加入 stable_hash 抽样配置。
+
+二、本地验证结果
+- 核心脚本 py_compile：通过。
+- test_source_quality.py：13 passed, 0 failed。
+- test_parser.py：12 passed, 0 failed。
+- test_discovery.py：8 passed, 0 failed。
+- 节点身份与输出配置对齐：通过。
+- 稳定哈希抽样重复执行结果一致：通过。
+- 现有 output.yaml：19859 个节点，质量门通过，代理组引用完整。
+- 现有 output-filtered-fast.yaml：100 个节点，质量门通过，代理组引用完整。
+- 移动版预览：100 个节点，悬空引用 0 个；AUTO 配置完整，PROXY 首成员为当前 Top1。
+
+三、未执行事项
+- 没有直接运行会抓取公网来源、启动 mihomo、测速或修改 Clash 当前生效 profile 的完整流水线，因此不会把未经本机真实验证的节点称为可用。
+- 真正运行前请确认 run_pipeline.py 中的 mihomo 路径、测速站点可访问，并确认这些节点/来源属于你有权使用的范围。

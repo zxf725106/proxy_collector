@@ -1,0 +1,54 @@
+# ============================================================
+# proxy_collector — .gitignore
+# 只把「代码 + 配置模板 + 文档 + 小型学习状态」入库；
+# 每轮重写的产物、日志、临时文件、含明文 key 的真实配置全部排除。
+# ============================================================
+
+# ---------- 生成的配置 / 产物（每轮重写，体积大）----------
+# 若想保留「上周还能用的配置」历史以便 diff 排查，删掉下面这行即可
+output*.yaml
+# deploy 到 Clash Verge 的中间副本
+deploy_clash/
+
+# ---------- 日志 ----------
+*.log
+collect_log*.txt
+
+# ---------- 临时 / 中间 / 备份文件 ----------
+*.tmp
+*.bak
+*.runbak
+*.prerestore.bak
+*-FAKE-backup*
+*.broken.*.yaml
+# _http_test_config.yaml / _speed_tmp.yaml / _diag_tmp.yaml / _verify_*.yaml ...
+_*.yaml
+
+# ---------- 跨轮次学习状态与旁路文件（体积大、每轮变化）----------
+candidates/legacy_sources.json
+candidates/aggregator_uris.txt
+candidates/aggregator_sources.json
+candidates/*.yaml
+candidates/*.http.json
+node_stability.json
+output-latency.json
+outputs/*.json
+
+# ---------- 含明文订阅 key 的真实配置（模板见 config.example.yaml）----------
+config*.yaml
+!config.example.yaml
+
+# ---------- 改进前备份 / 历史垃圾归档目录 ----------
+_backup_before_improve_*/
+_attic_*/
+backup_2026*/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---------- 新增（2026-10-16）：真实节点凭据 / 个人笔记，不公开 ----------
+clash-import*.yaml
+.workbuddy/
