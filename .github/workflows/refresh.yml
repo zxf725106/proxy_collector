@@ -70,6 +70,22 @@ jobs:
           restore-keys: |
             pcoll-state-
 
+      - name: 准备 config.yaml
+        env:
+          PCOLL_CONFIG_YAML: ${{ secrets.PCOLL_CONFIG_YAML }}
+        run: |
+          set -euo pipefail
+          # config.yaml 被 .gitignore 排除（可能含付费订阅 key），云端默认没有它，
+          # 而 collector.py 起步就要求该文件存在。
+          if [ -n "${PCOLL_CONFIG_YAML:-}" ]; then
+            printf '%s\n' "$PCOLL_CONFIG_YAML" > config.yaml
+            echo "已用仓库密钥 PCOLL_CONFIG_YAML 写入 config.yaml"
+          else
+            cp config.example.yaml config.yaml
+            echo "未设置 PCOLL_CONFIG_YAML，改用 config.example.yaml（仅公共免费源）"
+          fi
+          python -c "import yaml; d=yaml.safe_load(open('config.yaml',encoding='utf-8')); print('订阅源数量:', len(d.get('subscriptions',[])))"
+
       - name: 安装 mihomo 核心
         run: |
           set -euo pipefail
