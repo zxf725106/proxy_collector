@@ -117,6 +117,13 @@ jobs:
         env:
           PCOLL_BASE: ${{ github.workspace }}
           PCOLL_SKIP_DEPLOY: '1'
+          # AUTO(url-test) 成员上限。默认 30 是按"云端实测带宽"取前 30 个，
+          # 但云端是 Azure 机房视角、用户在国内，实测证明：100 个节点里国内可用
+          # 34 个，而云端选出的前 30 名只覆盖了其中 8 个 —— 另外 26 个可用节点
+          # url-test 根本碰不到（Clash 的 AUTO 组因此大面积 Error）。
+          # 设为 1000 等于"不设上限"：AUTO 覆盖全部已发布节点，让客户端的
+          # url-test 用真实网络自己挑，这才是对异地（国内）用户正确的做法。
+          PCOLL_AUTO_TOP: '1000'
           PYTHONUTF8: '1'
           PYTHONIOENCODING: utf-8
         run: |
@@ -137,7 +144,13 @@ jobs:
               echo "!! 产物缺失或为空: $f"
               exit 1
             fi
-            echo "$f : $(wc -c < "$f") 字节 / $(grep -c '^  - name:' "$f" || true) 个节点"
+            # 每个代理条目都有 server: 字段（代理组没有），用它精确统计节点数
+            n=$(grep -c '^  server: ' "$f" || true)
+            echo "$f : ${n} 个节点, $(wc -c < "$f") 字节"
+            if [ "$n" -lt 5 ]; then
+              echo "!! 节点数过少（${n} < 5），拒绝发布"
+              exit 1
+            fi
           done
 
       - name: 发布到 output 分支
