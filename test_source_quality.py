@@ -54,17 +54,34 @@ check(0.5 < w <= 1.0, f"高质量源权重较高 ({w:.3f})")
 check(t.is_enabled("good"), "高质量源启用")
 check(t.sources["good"]["pass_rate_ema"] > 0.7, "通过率 EMA 反映高通过率")
 
-# 3. 垃圾源：低通过率 + 样本充足 -> 自动停用(权重=0)
+# 3. 垃圾源：通过率极低 + 样本充足 + 几乎没有绝对产出 -> 自动停用(权重=0)
+#    注意：不能再拿"5/250 = 2% 通过率"当垃圾源 —— 现实中最好的免费源通过率也只有
+#    0.3%~0.7%，2% 其实相当优质（见下方 3b 的回归用例）。
 st = _tmp_state()
 t = sq.SourceQualityTracker(st)
 t.begin_run()
 t.add_source_batch("junk", [f"vmess://j{i}" for i in range(250)])
-t.add_verification("junk", [f"vmess://j{i}" for i in range(5)], 1400)  # 通过率 2%
+t.add_verification("junk", [], 1400)                     # 0 通过：250 个全死
 t.finish_run()
 check(t.weight("junk") == 0.0, "垃圾源权重=0(自动停用)")
 check(not t.is_enabled("junk"), "垃圾源被停用")
 check("junk" in t.disabled_sources(), "disabled_sources() 含 junk")
-check(t.sources["junk"]["pass_rate_ema"] < 0.05, "垃圾源通过率 EMA 极低")
+check(t.sources["junk"]["pass_rate_ema"] < sq.DISABLE_PASS_RATE, "垃圾源通过率 EMA 极低")
+
+# 3b. 回归用例（P0）：大流量源即使通过率低于停用线，只要绝对产出够多就不能停用。
+#     实测 rtwo2/FastNodes: 采集 345,339、存活 561、通过率 0.16% ——
+#     旧阈值 5% 会把它判成垃圾，而那 561 个节点是全池最大的单一贡献源。
+st = _tmp_state()
+t = sq.SourceQualityTracker(st)
+t.begin_run()
+t.add_source_batch("bigflow", [f"vmess://b{i}" for i in range(10000)])
+t.add_verification("bigflow", [f"vmess://b{i}" for i in range(3)], 800)   # 通过率 0.03%
+t.finish_run()
+check(t.sources["bigflow"]["pass_rate_ema"] < sq.DISABLE_PASS_RATE,
+      "回归用例前提：通过率确实低于停用线")
+check(t.sources["bigflow"]["passed_total"] >= sq.MIN_PASSED_TOTAL,
+      "回归用例前提：绝对产出达到下限")
+check(t.is_enabled("bigflow"), "大流量低通过率源不应被停用")
 
 # 4. 稀有度(新鲜度)信号：共享多的节点 uniqueness 低
 st = _tmp_state()

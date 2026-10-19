@@ -60,7 +60,14 @@ RARITY_MAX_SOURCES = 2     # 出现在 <= 该数量的源里，算「稀有/新�
 PASS_ALPHA = 0.3           # 通过率 EMA 系数（越大越跟近期）
 UNIQ_ALPHA = 0.3          # 稀有度 EMA 系数
 LAT_ALPHA = 0.3           # 时延 EMA 系数
-DISABLE_PASS_RATE = 0.05  # 历史通过率低于此且样本充足 -> 自动停用
+# 自动停用门槛（双条件）。
+# 原值 0.05（5%）比现实高一个数量级：实测 22 个样本充足的源里，通过率全部落在
+# 0.00%–0.70%（最高的一个源 345,339 采集 / 561 存活 = 0.16%）。5% 的线把
+# 22 个源全部判成"垃圾"，误杀 618/618 个存活节点。
+# 单看通过率同样会误杀：一个 345k 采集的源通过率 0.16% 仍能产出 561 个节点，
+# 而 1.2k 采集的源通过率 0.11% 只产出 1 个 —— 必须同时看绝对产出。
+DISABLE_PASS_RATE = 0.0005  # 历史通过率低于此（0.05%）……
+MIN_PASSED_TOTAL = 3        # ……且历史存活总数低于此，两个条件同时满足才自动停用
 REENABLE_AFTER_RUNS = 8   # 被自动停用满这么多轮后，重新放行一次做观察（避免误杀永久化）
 GOOD_LATENCY_MS = 300     # 时延因子=1 的阈值（优秀）
 BAD_LATENCY_MS = 1500     # 时延因子=0 的阈值（不可接受）
@@ -202,9 +209,12 @@ class SourceQualityTracker:
                     st["collected_total"] = 0   # 重新累计样本，避免用同一批旧数据立刻再停用
                     self._reenabled.append(name)
 
-            # 5) 自动停用：样本充足且通过率极低
+            # 5) 自动停用：样本充足、通过率极低 **且** 几乎没有绝对产出。
+            #    双条件是必须的：只看通过率会误杀"大流量、低通过率"的优质源
+            #    （实测 rtwo2/FastNodes 采集 345,339 个、存活 561 个，通过率仅 0.16%）。
             if (st.get("enabled", True) and st["collected_total"] >= MIN_SAMPLES
-                    and st["pass_rate_ema"] < DISABLE_PASS_RATE):
+                    and st["pass_rate_ema"] < DISABLE_PASS_RATE
+                    and st.get("passed_total", 0) < MIN_PASSED_TOTAL):
                 st["enabled"] = False
                 st["disabled_at_run"] = st["runs"]
                 st["probation"] = False
