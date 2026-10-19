@@ -56,6 +56,22 @@ subscriptions:
 - https://raw.githubusercontent.com/ishalumi/proxy-node-collector/main/output/nodes_base64.txt
 # xrayfree/free-ssr-ss-v2ray-vpn-clash: xrayvip 固定订阅, base64 编码
 - https://www.xrayvip.com/free.txt
+# --- 2026-10-19 实测新增（按 TCP 存活率筛选，非凭感觉添加）---
+# 测法: 用 subscription_parser 解析 -> 每源抽样最多 300 个节点做 TCP 连通测试
+#   lanzm/MetaFetch list.txt       742 节点 / 抽样 300 / 存活 27.3%
+#   ts-sf/fly v2                   201 节点 / 抽样 201 / 存活 30.3%
+#   hezhanleiok/freesub v2ray.txt  594 节点 / 抽样 300 / 存活  6.0%
+#   aiboboxx/v2rayfree sub          85 节点 / 抽样  85 / 存活 14.1%
+#   ripaojiedian/freenode sub       13 节点 / 抽样  13 / 存活 84.6%  (小而精)
+#   sunmiao4458/free-proxy-airport   8 节点 / 抽样   8 / 存活 87.5%  (小而精)
+# 注: 同仓库的 clash 格式变体(ts-sf/fly/clash、ripaojiedian/freenode/clash)
+#     多次实测输出不稳定（同一 URL 有时解析出 200 节点、有时 0），故取 v2/sub 变体
+- https://raw.githubusercontent.com/lanzm/MetaFetch/master/list.txt
+- https://raw.githubusercontent.com/ts-sf/fly/main/v2
+- https://raw.githubusercontent.com/hezhanleiok/freesub/main/output/v2ray.txt
+- https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/sub
+- https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub
+- https://raw.githubusercontent.com/sunmiao4458/free-proxy-airport/main/output/clash.yaml
 filter:
   include_keywords: []
   exclude_keywords: []
