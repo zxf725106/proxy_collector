@@ -1,0 +1,6 @@
+﻿# 统一换行符：源码/配置用 LF，Windows 原生脚本保持 CRLF
+# 目的：避免在 Windows 上编辑后整文件变成 CRLF，产生无意义的全文件 diff
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
