@@ -1,0 +1,2944 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+proxies:
+- name: 🇺🇸 United States (US) - Seattle | 216.106.186.33:443
+  type: trojan
+  server: 216.106.186.33
+  port: 443
+  udp: true
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+- name: 🇫🇷 Paris, FR · M247 Europe SRL | 38.180.240.150 :443
+  type: trojan
+  server: 38.180.240.150
+  port: 443
+  udp: true
+  password: d2adff89-5143-4d67-921f-3478464de5bb
+  sni: fr.freeguard.org
+  skip-cert-verify: true
+- name: 🇺🇸 United States - Unknown | 216.205.52.16:443 3
+  type: ss
+  server: 216.205.52.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\=2560;host=ylnhh.us.ci;tls#🇺🇸
+    United States - Unknown | 216.205.52.16:443 3
+- name: 🇺🇸 United States - Unknown | 198.12.144.16:443 3
+  type: ss
+  server: 198.12.144.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\=2560;host=ylnhh.us.ci;tls#🇺🇸
+    United States - Unknown | 198.12.144.16:443 3
+- name: 🇫🇷 France - Unknown | 54.36.174.140:443 2
+  type: ss
+  server: 54.36.174.140
+  port: 443
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: eetk7pw
+- name: 🇨🇦 Canada - Toronto | 216.152.147.85:443 11
+  type: trojan
+  server: 216.152.147.85
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.connectingpeoplewithgreatjobs.com
+- name: CN 🇨🇳 | @Raydikalx | ACF667
+  type: vmess
+  server: 39.108.113.127
+  port: 10086
+  udp: true
+  uuid: d50cc563-0c03-4136-899f-85cbc0b02699
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+  security: auto
+- name: 🇺🇸 United States - Atlanta | 216.152.156.81:443 10
+  type: trojan
+  server: 216.152.156.81
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.healthcarejobshubenhancemedicalprofessionalskillstoday.com
+  skip-cert-verify: true
+- name: 🇨🇳 China (CN) - Shenzhen | ja262.magiclampcloud.cn:59443 33
+  type: trojan
+  server: ja262.magiclampcloud.cn
+  port: 59443
+  udp: true
+  password: da5051376e910e2b7c371ef039ab6a28
+  sni: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+- name: 🇯🇵 Japan - Unknown | 152.175.38.29:2053
+  type: trojan
+  server: 152.175.38.29
+  port: 2053
+  udp: true
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  sni: official.tokyometropolis.chernigov.ua
+  skip-cert-verify: true
+- name: 🇺🇸 United States - Atlanta | 149.40.57.135:19999
+  type: ss
+  server: 149.40.57.135
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇬🇧 City Of London, GB · Clouvider Limited | 195.54.161.249 :9443·trojan
+  type: trojan
+  server: 195.54.161.249
+  port: 9443
+  udp: true
+  password: d1a4cbb2943e4d27addae29bd449907a
+  sni: apple.com
+- name: 🇦🇺 Australia - Sydney | 45.63.30.142:443 2
+  type: trojan
+  server: 45.63.30.142
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 45.63.30.142
+  skip-cert-verify: true
+- name: 🇫🇷 France - Paris | 15.236.134.147:443
+  type: ss
+  server: 15.236.134.147
+  port: 443
+  udp: true
+  cipher: aes-256-cfb
+  password: amazonskr05
+  plugin: '#🇫🇷 France - Paris | 15.236.134.147:443'
+- name: برای اتصال دائمی جوین شو☄️ TelegramID ⌲Express_freevpn 🪩
+  type: vmess
+  server: 67.220.95.3
+  port: 18000
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  security: auto
+- name: 🇪🇪 Estonia (EE) - Tallinn | checkout.salu.lalibobi.online:443 2
+  type: trojan
+  server: checkout.salu.lalibobi.online
+  port: 443
+  udp: true
+  password: qjQdBgnCuhLVLxYKyBrEWHYtWJYtBjpS
+  sni: checkout.salu.lalibobi.online
+- name: 🇩🇪 Germany - Frankfurt am Main | 4935e4t.de25.h1clayd.click:443 10
+  type: vless
+  server: 4935e4t.de25.h1clayd.click
+  port: 443
+  udp: true
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  cipher: none
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
+    short-id: '6976d670818644cc'
+  tls: true
+  sni: 4935e4t.de25.h1clayd.click
+- name: 🇸🇪 Sweden - Unknown | 95.143.196.97:443 2
+  type: trojan
+  server: 95.143.196.97
+  port: 443
+  udp: true
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+  sni: connect-se.mimowhat.online
+- name: 🇺🇸 United States - Chicago | 216.152.155.59:443 10
+  type: trojan
+  server: 216.152.155.59
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.findconnectwithemployersandbuildprofessionalnetwork.com
+  skip-cert-verify: true
+- name: 🇷🇺 Moscow, RU · LLC Baxet | 45.147.200.44 :443
+  type: trojan
+  server: 45.147.200.44
+  port: 443
+  udp: true
+  password: 265f092f-418b-30c9-a479-4800fd44dd19mielink
+  sni: $$paydiu.com
+  skip-cert-verify: true
+- name: 🇬🇧 United Kingdom (GB) - Unknown | 82.38.31.156:8080
+  type: ss
+  server: 82.38.31.156
+  port: 8080
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇱🇻 Latvia - Riga | 185.135.86.175:9033
+  type: ss
+  server: 185.135.86.175
+  port: 9033
+  udp: true
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
+- name: 🇸🇬 Singapore, SG · Melbikomas UAB | 91.192.81.167 :443·trojan
+  type: trojan
+  server: 91.192.81.167
+  port: 443
+  udp: true
+  password: df1f7e80-48a2-11f0-8b4b-1239d0255272
+  sni: sg4.6n6.net
+  skip-cert-verify: true
+- name: 🇮🇷 Iran - Unknown | ir1.wufpel.ir:443 2
+  type: trojan
+  server: ir1.wufpel.ir
+  port: 443
+  udp: true
+  password: GbeGE_MwDQ_2Q_0b9RgdZd07ChS3mMLz
+  sni: bf0264eb50014997.wufpel.ir
+- name: برای اتصال دائمی جوین شو☄️ TelegramID ⌲Express_freevpn 🪩 2
+  type: ss
+  server: 202.50.253.63
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇨🇦 Canada - Unknown | 51.79.85.185:8118
+  type: ss
+  server: 51.79.85.185
+  port: 8118
+  udp: true
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇺🇸 United States - Reston | 15.204.246.111:5498
+  type: ss
+  server: 15.204.246.111
+  port: 5498
+  udp: true
+  cipher: aes-256-gcm
+  password: lGqs95QkFHo2NV
+- name: CA 🇨🇦 | @Raydikalx | 3BB0FC
+  type: vmess
+  server: 104.21.50.177
+  port: 2083
+  udp: true
+  uuid: ac251237-576f-40c8-a543-554960c958b1
+  alterId: 0
+  cipher: auto
+  tls: true
+  sni: or3.sfacg.uk
+  network: ws
+  ws-opts:
+    path: /or3
+    headers:
+      Host: or3.sfacg.uk
+  security: auto
+- name: 🇳🇱 Amsterdam, NL · Fz | nl4.275.axolab.org :443·trojan·#3
+  type: trojan
+  server: nl4.275.axolab.org
+  port: 443
+  udp: true
+  password: xMg1JMgkXAL_20TueWjz_6KJAAs7NnK0
+  sni: nl4.275.axolab.org
+- name: 🇫🇷 France (FR) - Unknown | 217.182.76.235:443 2
+  type: trojan
+  server: 217.182.76.235
+  port: 443
+  udp: true
+  password: 05003b7a-8f03-41d5-b696-0119e8376a20
+  sni: t6.teslacdn2.live
+  skip-cert-verify: true
+- name: 🇸🇪 Sweden (SE) - Unknown | checkout.skog.lalibobi.online:443
+  type: trojan
+  server: checkout.skog.lalibobi.online
+  port: 443
+  udp: true
+  password: qjQdBgnCuhLVLxYKyBrEWHYtWJYtBjpS
+  sni: checkout.skog.lalibobi.online
+- name: 🇺🇸 Dallas, US · HostPapa | 192.3.107.252 :443
+  type: trojan
+  server: 192.3.107.252
+  port: 443
+  udp: true
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  sni: rc8.freeguard.org
+- name: 🇨🇦 Canada - Montreal | 158.51.121.221:19999
+  type: ss
+  server: 158.51.121.221
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 France - Unknown | 79.137.99.183:19999
+  type: ss
+  server: 79.137.99.183
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 Singapore - Unknown | 149.88.107.74:19999
+  type: ss
+  server: 149.88.107.74
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: CA 🇨🇦 | @Raydikalx | F60DB5
+  type: vmess
+  server: 172.64.155.209
+  port: 8443
+  udp: true
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  sni: v2ray1.dozapp.xyz
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+  security: auto
+- name: 🇮🇱 Israel - Unknown | 64.177.66.60:8388
+  type: ss
+  server: 64.177.66.60
+  port: 8388
+  udp: true
+  cipher: aes-256-gcm
+  password: jfWoSVCVYXRmNBfC
+- name: 🇩🇪 Germany - Frankfurt am Main | 185.176.204.18:19999 3
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: type=tcp
+- name: 🇩🇪 Germany - Frankfurt am Main | m1.mincreaft.com:5443 3
+  type: trojan
+  server: m1.mincreaft.com
+  port: 5443
+  udp: true
+  password: NxYNjE7a5zyVX9to345Q-_EUZ9WRqoQ6
+  sni: m1.mincreaft.com
+- name: 🇺🇸 Dallas, US · GTHost | 216.106.179.230
+  type: trojan
+  server: 216.106.179.230
+  port: 9251
+  udp: true
+  password: AE62539071
+  sni: dl1-us.freeconnect.link
+- name: 🇷🇺 Russia (RU) - St Petersburg | 91.240.87.108:443 2
+  type: trojan
+  server: 91.240.87.108
+  port: 443
+  udp: true
+  password: pR320Cwdj7mJ9HKc_UVz-VJyuecT4qdh
+  sni: z40.tgnn.live
+- name: 🇧🇬 Bulgaria - Sofia | 213.183.63.60:9030
+  type: ss
+  server: 213.183.63.60
+  port: 9030
+  udp: true
+  cipher: aes-256-cfb
+  password: GeregetR8cvQHzYr
+- name: 🇷🇺 Russia - Unknown | 130.49.189.158:43558 7
+  type: ss
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+- name: 🇺🇸 United States - Unknown | sclass-b1.catcat321.com:20027 6
+  type: trojan
+  server: sclass-b1.catcat321.com
+  port: 20027
+  udp: true
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: sclass-b1.catcat321.com
+  skip-cert-verify: true
+- name: 🇪🇸 Spain - Madrid | 5.188.181.201:9019
+  type: ss
+  server: 5.188.181.201
+  port: 9019
+  udp: true
+  cipher: aes-256-cfb
+  password: GA9KzeEgvfxNrgmM
+- name: 🇺🇸 United States - Ashburn | 66.163.122.81:443 2
+  type: trojan
+  server: 66.163.122.81
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 66.163.122.81
+  skip-cert-verify: true
+- name: 🇯🇵 Japan - Tokyo | 45.142.167.70:443
+  type: trojan
+  server: 45.142.167.70
+  port: 443
+  udp: true
+  password: q6UYkw9nUn6MYZz8Sp
+  sni: ty-2.tr202604.com
+  skip-cert-verify: true
+- name: 🇵🇱 Poland - Warsaw | 217.30.10.70:9060
+  type: ss
+  server: 217.30.10.70
+  port: 9060
+  udp: true
+  cipher: aes-256-cfb
+  password: ueLXVkvh4hckhErQ
+- name: 🇩🇪 Germany - Düsseldorf | 193.8.124.54:443
+  type: trojan
+  server: 193.8.124.54
+  port: 443
+  udp: true
+  password: AG4yPUSazj57DBFnKG
+  sni: de-2.tr202604.com
+  skip-cert-verify: true
+- name: 🇮🇷 Iran - Unknown | 185.188.104.10:443
+  type: ss
+  server: 185.188.104.10
+  port: 443
+  udp: true
+  cipher: none
+  password: RSzEIkk2EsHEAVj15N5E/A==
+- name: 🇺🇸 United States - Unknown | 103.133.1.38:443 2
+  type: ss
+  server: 103.133.1.38
+  port: 443
+  udp: true
+  cipher: none
+  password: 3e96ef7d-8637-42c2-ac73-75182196e755
+  plugin: plugin=v2ray-plugin;mode=websocket;path=3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560;host=mfvpn.fuchen.indevs.in;tls#🇺🇸
+    United States - Unknown | 103.133.1.38:443 2
+- name: 🇳🇱 Netherlands - Amsterdam | 78.142.194.38:443
+  type: trojan
+  server: 78.142.194.38
+  port: 443
+  udp: true
+  password: owreRY1bmquS1WcYN2
+  sni: nl-1.tr202605.com
+  skip-cert-verify: true
+- name: 🇦🇺 Sydney, AU · xTom Pty | au-3.tr202605.com :443·trojan
+  type: trojan
+  server: au-3.tr202605.com
+  port: 443
+  udp: true
+  password: owreRY1bmquS1WcYN2
+  sni: au-3.tr202605.com
+- name: 🇸🇬 Singapore, SG · Datacamp Limited | 149.88.23.207 :18000·vmess·#3
+  type: vmess
+  server: 149.88.23.207
+  port: 18000
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  security: auto
+- name: 🇬🇧 United Kingdom - City of London | 38.114.120.221:19999
+  type: ss
+  server: 38.114.120.221
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 United States - Unknown | 45.40.147.16:443 3
+  type: ss
+  server: 45.40.147.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\=2560;host=ylnhh.us.ci;tls#🇺🇸
+    United States - Unknown | 45.40.147.16:443 3
+- name: 🇳🇬 Lagos, NG · Melbikomas UAB | 103.97.91.17 :443
+  type: trojan
+  server: 103.97.91.17
+  port: 443
+  udp: true
+  password: 600421cf-11d7-429f-a65b-c30397f1bc03
+  sni: la.freeguard.org
+- name: 🇬🇧 United Kingdom - City of London | 3.10.212.107:443
+  type: ss
+  server: 3.10.212.107
+  port: 443
+  udp: true
+  cipher: aes-256-cfb
+  password: amazonskr05
+  plugin: '#🇬🇧 United Kingdom - City of London | 3.10.212.107:443'
+- name: CA 🇨🇦 | @Raydikalx | 213182
+  type: vmess
+  server: 188.114.96.3
+  port: 8443
+  udp: true
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+  security: auto
+- name: 🇺🇸 United States - Atlanta | 38.22.17.214:19999
+  type: ss
+  server: 38.22.17.214
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 Germany - Frankfurt am Main | 193.108.119.83:19999
+  type: ss
+  server: 193.108.119.83
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: '@meliproxyy'
+  type: ss
+  server: 193.151.160.9
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#@meliproxyy'
+- name: 🇸🇬 Singapore, SG · Zenlayer | 128.1.186.73
+  type: ss
+  server: 128.1.186.73
+  port: 8080
+  udp: true
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇦🇹 Vienna, AT · EDIS | 86.106.119.23 :443
+  type: trojan
+  server: 86.106.119.23
+  port: 443
+  udp: true
+  password: 600421cf-11d7-429f-a65b-c30397f1bc03
+  sni: gr.freeguard.org
+- name: 🇬🇧 United Kingdom · Datacamp Limited | 82.110.60.9 :19999
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇬 Singapore - Unknown | 173.234.15.84:48994 2
+  type: trojan
+  server: 173.234.15.84
+  port: 48994
+  udp: true
+  password: Z5lvhmLqSc
+  sni: m.microsoft.com
+  skip-cert-verify: true
+- name: 🇬🇧 United Kingdom - City of London | 185.49.34.54:443
+  type: trojan
+  server: 185.49.34.54
+  port: 443
+  udp: true
+  password: q6UYkw9nUn6MYZz8Sp
+  sni: uk-1.tr202604.com
+  skip-cert-verify: true
+- name: 🇩🇪 Germany - Frankfurt am Main | 57.129.76.233:19999
+  type: ss
+  server: 57.129.76.233
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 United States - Unknown | 141.193.213.21:8443 10
+  type: vmess
+  server: 141.193.213.21
+  port: 8443
+  udp: true
+  uuid: bd67fcd2-ec34-40a6-aac6-67731f2d7011
+  alterId: 0
+  cipher: auto
+  tls: true
+  sni: matrix.phonicsindia.mobi
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: matrix.phonicsindia.mobi
+  security: auto
+- name: 🇺🇸 United States - Washington | 172.111.38.72:19999
+  type: ss
+  server: 172.111.38.72
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇦🇪 United Arab Emirates - Unknown | 151.241.19.29:19999
+  type: ss
+  server: 151.241.19.29
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇷 Iran - Unknown | dkstatics-public.digikala.com:443
+  type: ss
+  server: dkstatics-public.digikala.com
+  port: 443
+  udp: true
+  cipher: none
+  password: RSzEIkk2EsHEAVj15N5E/A==
+- name: 🇯🇵 Tokyo, JP · xTom Japan Corporation | ty-3.tr202605.com :443·trojan
+  type: trojan
+  server: ty-3.tr202605.com
+  port: 443
+  udp: true
+  password: owreRY1bmquS1WcYN2
+  sni: ty-3.tr202605.com
+- name: 🇺🇸 美国 | trojan | 282
+  type: trojan
+  server: 170.101.101.19
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.explorecreativejobsandenhanceyourcareerportfolio.com
+- name: 🇩🇪 德国 | ss | 177
+  type: ss
+  server: 51.38.127.93
+  port: 8080
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: 03y5gbnyl4o1hc2n
+- name: KZ 🇰🇿 | @Raydikalx | A0A8A9
+  type: vmess
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+  security: auto
+- name: 🇺🇸 United States - Phoenix | 66.163.112.76:443 5
+  type: trojan
+  server: 66.163.112.76
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 'api.unlockyourfuturefindyourperfectcareer.com#🇺🇸 | تلگرام: @IRJetConfig'
+  skip-cert-verify: true
+- name: 🇺🇸 United States - Unknown | 160.153.137.16:443 2
+  type: ss
+  server: 160.153.137.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;host=ylnhh.us.ci;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\=2560;tls#🇺🇸
+    United States - Unknown | 160.153.137.16:443 2
+- name: 🇺🇸 547
+  type: vmess
+  server: US032021.ssgreen.org
+  port: 443
+  udp: true
+  uuid: 6d26e5cf-b816-4b3c-8dcd-5771c96e6850
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: US032021.ssgreen.org
+  security: auto
+- name: 🇭🇰 Hong Kong SAR China - Hong Kong | 47.244.120.197:44867 10
+  type: vmess
+  server: 47.244.120.197
+  port: 44867
+  udp: true
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+    headers:
+      Host: 47.244.120.197
+  security: auto
+- name: 'Channel : @Daily_Configs 2 2'
+  type: ss
+  server: 193.29.139.235
+  port: 443
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  plugin: '#Channel : @Daily_Configs'
+- name: 🇰🇷 South Korea - Seoul | 158.247.253.243:443 2
+  type: trojan
+  server: 158.247.253.243
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
+- name: 🇩🇪 Germany - Frankfurt am Main | 193.108.118.247:19999
+  type: ss
+  server: 193.108.118.247
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.77.248 :39495·vmess·#3
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  udp: true
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+  security: auto
+- name: 🇺🇸 United States - Unknown | 50.62.195.16:443 3
+  type: ss
+  server: 50.62.195.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\=2560;host=ylnhh.us.ci;tls#🇺🇸
+    United States - Unknown | 50.62.195.16:443 3
+- name: 🇺🇸 United States - Dallas | 156.146.38.169:443 2
+  type: ss
+  server: 156.146.38.169
+  port: 443
+  udp: true
+  cipher: aes-128-gcm
+  password: shadowsocks
+  plugin: cipher=aes-128-gcm#🇺🇸 United States - Dallas | 156.146.38.169:443 2
+- name: 🇺🇸US_564|177KB/s|M001-260618 [12f1c9c16511]
+  type: vmess
+  server: 104.21.91.53
+  port: 8443
+  udp: true
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  sni: v2ray1.dozapp.xyz
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+  security: auto
+- name: 🇵🇱 Poland - Warsaw | hl-freedom-1.undef.network:443 2
+  type: trojan
+  server: hl-freedom-1.undef.network
+  port: 443
+  udp: true
+  password: JaFKnqNcvnBT63t3rquidGsln
+  sni: hl-freedom-1.undef.network
+- name: 🇳🇱210299 | ⚡️Telegram = t.me/SOSkeyNET
+  type: ss
+  server: 156.67.120.205
+  port: 51628
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: 29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF
+- name: 🇬🇧 United Kingdom - London | 51.38.65.155:443 100
+  type: trojan
+  server: 51.38.65.155
+  port: 443
+  udp: true
+  password: 62313560-c059-11ee-b43c-1239d0255272
+  sni: uk1.test3.net
+  skip-cert-verify: true
+- name: 🇺🇸 United States - Miami | 169.197.140.218:443
+  type: trojan
+  server: 169.197.140.218
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.discoverfreshgraduatejobsstartyourprofessionaljourney.com
+- name: 🇺🇸US_336|358KB/s|S004-260618 [921f80d48e94]
+  type: vmess
+  server: 172.67.187.145
+  port: 80
+  udp: true
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+    headers:
+      Host: vmess.lbw666.dpdns.org
+  security: auto
+- name: 🇱🇹 Lithuania - Unknown | 195.238.126.20:9012
+  type: ss
+  server: 195.238.126.20
+  port: 9012
+  udp: true
+  cipher: aes-256-cfb
+  password: xaupMUvhptwxdDUg
+- name: 🇺🇸 United States - Chicago | 216.152.155.131:443 10
+  type: trojan
+  server: 216.152.155.131
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.nextjobopportunityandclaimyouridealrole.com
+  skip-cert-verify: true
+- name: 🇹🇼 Taiwan (TW) - New Taipei City | 60.250.152.229:8443 2
+  type: trojan
+  server: 60.250.152.229
+  port: 8443
+  udp: true
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  sni: official.taipeicitygovernment.chernovtsy.ua
+  skip-cert-verify: true
+- name: 🇫🇷 France - Unknown | 51.83.61.102:8080 2
+  type: ss
+  server: 51.83.61.102
+  port: 8080
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: 29irqk0paakcx19v
+  plugin: Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad#🇫🇷
+    France - Unknown | 51.83.61.102:8080 2
+- name: 🇭🇰 Hong Kong SAR China - Hong Kong | 16.106.7.232:20086 2
+  type: trojan
+  server: 16.106.7.232
+  port: 20086
+  udp: true
+  password: d9064589-74af-432a-9390-5d8a9da281bf
+  sni: hk.catxstar.com
+- name: 🇳🇱 Netherlands - Amsterdam | 123466.ru:26032 10
+  type: vmess
+  server: 123466.ru
+  port: 26032
+  udp: true
+  uuid: 804334e2-04ca-434c-8311-3ccee8218175
+  alterId: 0
+  cipher: auto
+  security: auto
+- name: 🇨🇭 Switzerland - Zurich | 208.69.78.158:443
+  type: trojan
+  server: 208.69.78.158
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.yourultimateprofessionalcareerhub.com
+- name: ❓Other_5|241KB/s|B007-260618 [0a330acd2e12]
+  type: ss
+  server: 51.79.64.198
+  port: 8119
+  udp: true
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇺🇸 United States - Detroit | 170.101.101.112:443 11
+  type: trojan
+  server: 170.101.101.112
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.explorecreativejobsandenhanceyourcareerportfolio.com
+- name: 🇮🇳 India - Mumbai | 152.67.8.205:80 107
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+    headers:
+      Host: in-152.67.8.205-0250
+  security: auto
+- name: 🇺🇸 United States - Atlanta | 38.22.17.219:19999
+  type: ss
+  server: 38.22.17.219
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇺🇸 United States - Unknown | 198.12.144.16:443
+  type: ss
+  server: 198.12.144.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;host=ylnhh.us.ci;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed=2560;tls=true#🇺🇸
+    United States - Unknown | 198.12.144.16:443
+- name: 🇵🇱 Poland - Warsaw | 217.30.10.70:9001
+  type: ss
+  server: 217.30.10.70
+  port: 9001
+  udp: true
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
+- name: 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 38 2
+  type: trojan
+  server: ja304.magiclampcloud.cn
+  port: 59443
+  udp: true
+  password: 7a5054478a34abfa1ca881874d3c5f62
+  sni: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+- name: 🇯🇵 Tokyo, JP · Amazon.com | v2jp.k1.ssnss.live :44184·trojan
+  type: trojan
+  server: v2jp.k1.ssnss.live
+  port: 44184
+  udp: true
+  password: d050aca3-9df2-4461-90ec-92373c1d7636
+  sni: v2jp.k1.ssnss.live
+- name: 🇩🇪 Germany - Frankfurt am Main | 193.108.119.29:443 2
+  type: trojan
+  server: 193.108.119.29
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.iloverussia2026.com
+- name: 🇨🇳 China - Shenzhen | ja262.magiclampcloud.cn:59443 91
+  type: trojan
+  server: ja262.magiclampcloud.cn
+  port: 59443
+  udp: true
+  password: cd15fc4b277f0a8a251e174c3e387dbc
+  sni: ja262.magiclampcloud.cn
+  skip-cert-verify: true
+- name: 🇬🇧 United Kingdom - Unknown | 82.38.31.178:8080 3
+  type: ss
+  server: 82.38.31.178
+  port: 8080
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇺🇸 United States - Santa Clara | 167.88.61.175:443 10
+  type: trojan
+  server: 167.88.61.175
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.browseseniorrolesandenhanceyourcareertoday.com
+- name: 🇺🇸 United States - Ashburn | 66.163.122.25:443 10
+  type: trojan
+  server: 66.163.122.25
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.searchnationwidecareerchangehelperandguidancetoday.com
+  skip-cert-verify: true
+- name: 🇺🇸 Dallas, US · Datacamp Limited | 156.146.38.168 :443
+  type: ss
+  server: 156.146.38.168
+  port: 443
+  udp: true
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇵🇱 Poland - Warsaw | hl-freedom-0.undef.network:443 2
+  type: trojan
+  server: hl-freedom-0.undef.network
+  port: 443
+  udp: true
+  password: 76yTlnTIsjCTlmqnUJ5Tzc1rM
+  sni: hl-freedom-0.undef.network
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: '%2Ff2fc2a1f'
+    headers:
+      Host: hl-freedom-0.undef.network
+- name: 🇮🇷 Iran · Noavaran Fan Avazeh Co.… | 185.188.104.11
+  type: ss
+  server: 185.188.104.11
+  port: 443
+  udp: true
+  cipher: none
+  password: RSzEIkk2EsHEAVj15N5E/A==
+- name: 🇫🇷 France - Unknown | 162.19.192.89:16641 2
+  type: vmess
+  server: 162.19.192.89
+  port: 16641
+  udp: true
+  uuid: 9d5c15a3-166c-4d65-8a0b-d7a7a7c8863a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 7d56482dc5251e2efaca623dcbc64e3d.mobgslb.tbcache.com
+  security: auto
+- name: 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 38
+  type: trojan
+  server: ja304.magiclampcloud.cn
+  port: 59443
+  udp: true
+  password: 81f683c3f594588c69c9494526a57f3d
+  sni: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+- name: 🇺🇸 United States - Seattle | 216.106.186.66:443
+  type: trojan
+  server: 216.106.186.66
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.findlocaljobnetworkandbuildcommunityconnections.com
+- name: 🇨🇳 China - Unknown | tyy129.magiclampcloud.com:59443 17
+  type: trojan
+  server: tyy129.magiclampcloud.com
+  port: 59443
+  udp: true
+  password: a74c18e385d4df373ae7871c331cc88b
+  sni: tyy129.magiclampcloud.com
+- name: 🇺🇸 United States - Unknown | 104.238.70.16:443 2
+  type: ss
+  server: 104.238.70.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;host=ylnhh.us.ci;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/
+- name: 🇯🇵 Japan - Osaka | 161.33.38.253:443 2
+  type: ss
+  server: 161.33.38.253
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;path=14b02e2a-8930-4afb-8412-ea4a4954ca5b/
+- name: trojan-1935612269
+  type: trojan
+  server: 66.163.112.242
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.nextjobopportunityandclaimyouridealrole.com
+  skip-cert-verify: true
+- name: 🇩🇪 Germany - Frankfurt am Main | 147.45.66.60:43000 2
+  type: vless
+  server: 147.45.66.60
+  port: 43000
+  udp: true
+  uuid: 01e61db7-9e0b-4431-a995-a5288a01b951
+  cipher: none
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: DbL9RJFvJrnxBu6fFhWkHF8nsD6cK_DKMuMV00RmlWg
+    short-id: '4d3d8e15'
+  tls: true
+- name: 🇮🇹 Italy - Palermo | 91.201.65.122:9002
+  type: ss
+  server: 91.201.65.122
+  port: 9002
+  udp: true
+  cipher: aes-256-cfb
+  password: b8KkNDjEd5QqFyRm
+  plugin: '#🇮🇹 Italy - Palermo | 91.201.65.122:9002'
+- name: 🇺🇸 United States - Unknown | sclass-b1.catcat321.com:20051
+  type: trojan
+  server: sclass-b1.catcat321.com
+  port: 20051
+  udp: true
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: ✅ t.me/bigAVPN ایران آزاد 👑
+  type: vmess
+  server: yg6.ygkkk.dpdns.org
+  port: 80
+  udp: true
+  uuid: 3c75a551-81d6-46d0-876d-79519719bb22
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: 3c75a551-81d6-46d0-876d-79519719bb22-vm
+    headers:
+      Host: argo.235697.xyz
+  security: auto
+- name: 🇩🇪 Germany - Frankfurt am Main | 57.129.83.85:19999
+  type: ss
+  server: 57.129.83.85
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 'Channel : @Daily_Configs 3 2'
+  type: ss
+  server: 82.38.31.62
+  port: 8080
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  plugin: '#Channel : @Daily_Configs'
+- name: 🇨🇳 China - Unknown | tyy129.magiclampcloud.com:59443 35
+  type: trojan
+  server: tyy129.magiclampcloud.com
+  port: 59443
+  udp: true
+  password: d7f4b46d9e42ad4a6519bde2ff7ce43c
+  sni: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+- name: ❓未知丨yoyapai.com 3
+  type: ss
+  server: 202.50.253.36
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#❓未知丨yoyapai.com'
+- name: 🇳🇱 Netherlands - Amsterdam | 66.163.127.154:443 2
+  type: trojan
+  server: 66.163.127.154
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 66.163.127.154
+  skip-cert-verify: true
+- name: 🇮🇳 India - Mumbai | 152.67.8.205:80 132
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.67.8.205
+  security: auto
+- name: 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 8
+  type: trojan
+  server: ja304.magiclampcloud.cn
+  port: 59443
+  udp: true
+  password: 2ddeb5f43bbb897b13db728b2dfbef92
+  sni: ja304.magiclampcloud.cn
+- name: 🇺🇸 United States - Chicago | 216.152.155.23:443 2
+  type: trojan
+  server: 216.152.155.23
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.nextjobopportunityandclaimyouridealrole.com
+- name: 🇧🇬BG_4|2.5MB/s|A004-260618 [f12ae6151539]
+  type: ss
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
+- name: 🇨🇭 Switzerland - Zurich | 208.69.78.60:443 2
+  type: trojan
+  server: 208.69.78.60
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.yourultimateprofessionalcareerhub.com
+- name: 🇮🇹 Italy - Palermo | 91.201.65.122:9059
+  type: ss
+  server: 91.201.65.122
+  port: 9059
+  udp: true
+  cipher: aes-256-cfb
+  password: 9XwYyZsK8SNzQDtY
+  plugin: '#🇮🇹 Italy - Palermo | 91.201.65.122:9059'
+- name: 🇺🇸 United States - Ashburn | 66.163.122.26:443 2
+  type: trojan
+  server: 66.163.122.26
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.searchnationwidecareerchangehelperandguidancetoday.com
+  skip-cert-verify: true
+- name: 🇬🇧 United Kingdom (GB) - Unknown | 82.38.31.194:8080
+  type: ss
+  server: 82.38.31.194
+  port: 8080
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 Netherlands - The Netherlands | 193.29.139.212:8080
+  type: ss
+  server: 193.29.139.212
+  port: 8080
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+- name: 🇨🇭 Switzerland - Zurich | 208.69.78.19:443 3
+  type: trojan
+  server: 208.69.78.19
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 208.69.78.19
+  skip-cert-verify: true
+- name: 🇮🇹 Italy - Milan | 202.50.253.36:19999 2
+  type: ss
+  server: 202.50.253.36
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇭🇰 Hong Kong SAR China - Hong Kong | 47.244.120.197:23026 10
+  type: vmess
+  server: 47.244.120.197
+  port: 23026
+  udp: true
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+  security: auto
+- name: 🇯🇵 Japan (JP) - Tokyo | 18.179.31.199:443 5
+  type: trojan
+  server: 18.179.31.199
+  port: 443
+  udp: true
+  password: ND91608427
+  sni: prompt-duckling.rooster465.autos
+  skip-cert-verify: true
+- name: 🇸🇬 SG · Singapore    · 43.160.19… · 7560D79A4AA5
+  type: trojan
+  server: 43.160.197.160
+  port: 443
+  udp: true
+  password: 38f169d6-d202-4b1b-8db8-e6eb1648f5cf
+  sni: 43.160.197.160
+  skip-cert-verify: true
+- name: 🇨🇦 Toronto, CA · DigitalOcean | 159.203.22.227 :443
+  type: trojan
+  server: 159.203.22.227
+  port: 443
+  udp: true
+  password: acfef609-b3c7-4e52-b292-8921d5fca90d
+  sni: ca-full.privateip.net
+  skip-cert-verify: true
+- name: 🇺🇸 United States - Ashburn | 66.163.122.7:443 2
+  type: trojan
+  server: 66.163.122.7
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 66.163.122.7
+  skip-cert-verify: true
+- name: 🇮🇳 India - Mumbai | 152.67.8.205:80 101
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: ''
+  security: auto
+- name: 🇬🇧 United Kingdom (GB) - London | 51.38.65.155:443 100 2
+  type: trojan
+  server: 51.38.65.155
+  port: 443
+  udp: true
+  password: 6983bd70-ec7d-11ef-a5bc-1239d0255272
+  sni: uk1.test3.net
+  skip-cert-verify: true
+- name: 🇬🇧 United Kingdom (GB) - Unknown | 82.38.31.39:8080
+  type: ss
+  server: 82.38.31.39
+  port: 8080
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇪🇸 Spain - Madrid | 5.188.181.201:9042
+  type: ss
+  server: 5.188.181.201
+  port: 9042
+  udp: true
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
+- name: 🇨🇳 China - Unknown | tyy129.magiclampcloud.com:59443 23
+  type: trojan
+  server: tyy129.magiclampcloud.com
+  port: 59443
+  udp: true
+  password: 5f9b5bfbf52c85aeddefdca3abc694b1
+  sni: tyy129.magiclampcloud.com
+- name: 🇳🇱 Amsterdam, NL · DigitalOcean | 142.93.226.128 :443·trojan
+  type: trojan
+  server: 142.93.226.128
+  port: 443
+  udp: true
+  password: 979c34ad-710d-4446-bc95-0bfd397aaa78
+  sni: 142.93.226.128
+  skip-cert-verify: true
+- name: '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : @𝐃𝐚𝐢𝐥𝐲_𝐂𝐨𝐧𝐟𝐢𝐠𝐬'
+  type: ss
+  server: 193.151.160.9
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : @𝐃𝐚𝐢𝐥𝐲_𝐂𝐨𝐧𝐟𝐢𝐠𝐬'
+- name: 🇺🇸 United States - Seattle | 216.106.186.82:443 2
+  type: trojan
+  server: 216.106.186.82
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.findlocaljobnetworkandbuildcommunityconnections.com
+- name: 🇰🇷 South Korea - Incheon | 43.200.1.24:443 2
+  type: trojan
+  server: 43.200.1.24
+  port: 443
+  udp: true
+  password: AE62539071
+  sni: square-gnat.rooster465.autos
+  skip-cert-verify: true
+- name: 未知 SS-08 | free-nodes
+  type: ss
+  server: 202.50.253.72
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#未知 SS-08 | free-nodes'
+- name: 🇸🇬211011 | ⚡️Telegram = t.me/LonUp_M
+  type: ss
+  server: 149.88.106.73
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#🇸🇬211011 | ⚡️Telegram = t.me/LonUp_M'
+- name: 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 6
+  type: trojan
+  server: ja304.magiclampcloud.cn
+  port: 59443
+  udp: true
+  password: 275edc5ad2872c5f40a15de8a9e95416
+  sni: ja304.magiclampcloud.cn
+- name: 🇬🇧 United Kingdom (GB) - London | 51.38.65.155:443 100
+  type: trojan
+  server: 51.38.65.155
+  port: 443
+  udp: true
+  password: 67380160-ceb8-11ef-9941-1239d0255272
+  sni: uk1.test3.net
+  skip-cert-verify: true
+- name: 🇬🇧 United Kingdom · Greenhost BV | 82.38.31.217
+  type: ss
+  server: 82.38.31.217
+  port: 8080
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇭🇰 Hong Kong SAR China (HK) - Hong Kong | 83.229.121.78:8443 2
+  type: trojan
+  server: 83.229.121.78
+  port: 8443
+  udp: true
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  sni: 83.229.121.78
+  skip-cert-verify: true
+- name: 🇩🇪 Germany (DE) - Frankfurt am Main | m1.mincreaft.com:5443 2
+  type: trojan
+  server: m1.mincreaft.com
+  port: 5443
+  udp: true
+  password: Mj5nBFLSbUzPPJwjBa-WgS9ZnANpH01e
+  sni: m1.mincreaft.com
+- name: 🇮🇳IN_1|300KB/s|A004-260618 [b3f3a42347ba]
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+  security: auto
+- name: 🇹🇼 Taiwan - Taichung | 211.20.156.191:28133 2
+  type: trojan
+  server: 211.20.156.191
+  port: 28133
+  udp: true
+  password: i99Cef
+  sni: ctldl.windowsupdate.com
+  skip-cert-verify: true
+- name: 美国(yudou99.com 玉豆分享) 2
+  type: ss
+  server: 202.50.253.63
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#美国(yudou99.com 玉豆分享)'
+- name: 🇨🇳 China - Unknown | tyy129.magiclampcloud.com:59443 8 2
+  type: trojan
+  server: tyy129.magiclampcloud.com
+  port: 59443
+  udp: true
+  password: 2bfc5fda7fbccde82d6fada1465d131c
+  sni: tyy129.magiclampcloud.com
+- name: 🇫🇮 Finland - Helsinki | nnnmjju.131.pp.ua:443 2
+  type: trojan
+  server: nnnmjju.131.pp.ua
+  port: 443
+  udp: true
+  password: 98b419ef-83a2-4d1b-a23d-566b7f24477b
+  sni: nnnmjju.131.pp.ua
+  skip-cert-verify: true
+- name: 🇸🇬 Singapore - Unknown | pleased-sawfly.rooster465.autos:443
+  type: trojan
+  server: pleased-sawfly.rooster465.autos
+  port: 443
+  udp: true
+  password: FH72359861
+  sni: pleased-sawfly.rooster465.autos
+  skip-cert-verify: true
+- name: 🌐 Unknown - Unknown | ktc1k.xmrthnode.com:41305
+  type: trojan
+  server: ktc1k.xmrthnode.com
+  port: 41305
+  udp: true
+  password: 5bafc1f1-43bc-301c-bf57-53abbf20dabc
+  sni: mpvideo.qpic.cn
+  skip-cert-verify: true
+- name: 🇩🇪 Germany - Frankfurt am Main | 185.176.204.18:19999 4
+  type: ss
+  server: 185.176.204.18
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad#🇩🇪
+    Germany - Frankfurt am Main | 185.176.204.18:19999 4
+- name: 🇬🇧 United Kingdom · Greenhost BV | 82.38.31.61
+  type: ss
+  server: 82.38.31.61
+  port: 8080
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇰🇷 KR · South Korea  · ktc1k      · 73EB615ED13E
+  type: trojan
+  server: ktc1k.xmrthnode.com
+  port: 41040
+  udp: true
+  password: 5bafc1f1-43bc-301c-bf57-53abbf20dabc
+  sni: mpvideo.qpic.cn
+  skip-cert-verify: true
+- name: 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 42
+  type: trojan
+  server: ja304.magiclampcloud.cn
+  port: 59443
+  udp: true
+  password: ecb1c69fa0997abfe3965a2f343d4d52
+  sni: ja304.magiclampcloud.cn
+- name: EPODONIOS 8
+  type: ss
+  server: 45.86.51.18
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#EPODONIOS'
+- name: EPODONIOS 19
+  type: ss
+  server: 193.151.160.9
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#EPODONIOS'
+- name: EPODONIOS 15 2
+  type: ss
+  server: 193.151.163.18
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#EPODONIOS'
+- name: EPODONIOS 22
+  type: ss
+  server: 202.50.253.81
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#EPODONIOS'
+- name: 🇨🇳 China · No.293,Wanbao Avenue | tyy129.magiclampcloud.com :59443·trojan·#23
+  type: trojan
+  server: tyy129.magiclampcloud.com
+  port: 59443
+  udp: true
+  password: 493b3d1b5d6a298a32eea1935463dc4d
+  sni: tyy129.magiclampcloud.com
+- name: vmess-1854106572
+  type: vmess
+  server: 45.90.106.24
+  port: 1234
+  udp: true
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: true
+  skip-cert-verify: true
+  security: auto
+- name: 🇺🇸 Phoenix, US · Global Connectivity… | 212.18.104.164
+  type: trojan
+  server: 212.18.104.164
+  port: 14166
+  udp: true
+  password: WQSShTQIMW
+  sni: v.qq.com
+  skip-cert-verify: true
+- name: 🇳🇱 Netherlands - Amsterdam | 5.253.189.215:443 2
+  type: ss
+  server: 5.253.189.215
+  port: 443
+  udp: true
+  cipher: none
+  password: 3e96ef7d-8637-42c2-ac73-75182196e755
+  plugin: plugin=v2ray-plugin;mode=websocket;host=mfvpn.fuchen.indevs.in;path=3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560;tls;mux=0#🇳🇱
+    Netherlands - Amsterdam | 5.253.189.215:443 2
+- name: 🇺🇸 United States (US) - Unknown | 104.238.70.16:443 3
+  type: ss
+  server: 104.238.70.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\=2560;host=ylnhh.us.ci;tls#🇺🇸
+    United States (US) - Unknown | 104.238.70.16:443 3
+- name: 🇺🇸 United States (US) - Unknown | 45.40.147.16:443 2
+  type: ss
+  server: 45.40.147.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;host=ylnhh.us.ci;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\=2560;tls#🇺🇸
+    United States (US) - Unknown | 45.40.147.16:443 2
+- name: 🇺🇸 United States (US) - Unknown | 45.40.154.16:443 4
+  type: ss
+  server: 45.40.154.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\=2560;host=ylnhh.us.ci;tls#🇺🇸
+    United States (US) - Unknown | 45.40.154.16:443 4
+- name: 🇺🇸 United States (US) - Unknown | 50.62.88.16:443 2
+  type: ss
+  server: 50.62.88.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;host=ylnhh.us.ci;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed=2560;tls=true#🇺🇸
+    United States (US) - Unknown | 50.62.88.16:443 2
+- name: 🇨🇦 Canada (CA) - Toronto | 138.197.141.58:8080
+  type: ss
+  server: 138.197.141.58
+  port: 8080
+  udp: true
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  plugin: '#🇨🇦 Canada (CA) - Toronto | 138.197.141.58:8080'
+- name: 🇳🇱 Netherlands (NL) - Amsterdam | 5.253.189.215:443 3
+  type: ss
+  server: 5.253.189.215
+  port: 443
+  udp: true
+  cipher: none
+  password: 3e96ef7d-8637-42c2-ac73-75182196e755
+  plugin: plugin=v2ray-plugin;mode=websocket;path=3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560;host=mfvpn.fuchen.indevs.in;tls#🇳🇱
+    Netherlands (NL) - Amsterdam | 5.253.189.215:443 3
+- name: 🇸🇬 Singapore (SG) - Unknown | 68.183.235.240:8080
+  type: ss
+  server: 68.183.235.240
+  port: 8080
+  udp: true
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  plugin: '#🇸🇬 Singapore (SG) - Unknown | 68.183.235.240:8080'
+- name: 🇺🇸 United States (US) - Unknown | 103.133.1.38:443 2
+  type: ss
+  server: 103.133.1.38
+  port: 443
+  udp: true
+  cipher: none
+  password: 3e96ef7d-8637-42c2-ac73-75182196e755
+  plugin: plugin=v2ray-plugin;mode=websocket;host=mfvpn.fuchen.indevs.in;path=3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560;tls;mux=0#🇺🇸
+    United States (US) - Unknown | 103.133.1.38:443 2
+- name: 🇿🇦 Johannesburg, ZA · Microsoft Corporation | 102.133.165.160
+  type: ss
+  server: 102.133.165.160
+  port: 16233
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+- name: 🇨🇳 China (CN) - Unknown | tyy129.magiclampcloud.com:59443 36
+  type: trojan
+  server: tyy129.magiclampcloud.com
+  port: 59443
+  udp: true
+  password: d306137cdbd55eac0d79ca7d1e3904a4
+  sni: tyy129.magiclampcloud.com
+- name: 🇺🇸 United States (US) - Unknown | 45.40.154.16:443
+  type: ss
+  server: 45.40.154.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;host=ylnhh.us.ci;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed=2560;tls=true#🇺🇸
+    United States (US) - Unknown | 45.40.154.16:443
+- name: 🇺🇸 United States (US) - Unknown | 50.62.90.16:443 4
+  type: ss
+  server: 50.62.90.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\=2560;host=ylnhh.us.ci;tls#🇺🇸
+    United States (US) - Unknown | 50.62.90.16:443 4
+- name: 🇺🇸 United States (US) - Unknown | 50.62.195.16:443
+  type: ss
+  server: 50.62.195.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;host=ylnhh.us.ci;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed=2560;tls=true#🇺🇸
+    United States (US) - Unknown | 50.62.195.16:443
+- name: 🇮🇳 India (IN) - Mumbai | 103.181.177.88:443
+  type: ss
+  server: 103.181.177.88
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;host=ylnhh.us.ci;mode=websocket;path=14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed=2560;tls=false#🇮🇳
+    India (IN) - Mumbai | 103.181.177.88:443
+- name: 🇺🇸 United States (US) - Unknown | 198.12.144.16:443 3
+  type: ss
+  server: 198.12.144.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\=2560;host=ylnhh.us.ci;tls#🇺🇸
+    United States (US) - Unknown | 198.12.144.16:443 3
+- name: 🇺🇸 United States (US) - Unknown | 45.40.147.16:443
+  type: ss
+  server: 45.40.147.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;host=ylnhh.us.ci;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed=2560;tls=true#🇺🇸
+    United States (US) - Unknown | 45.40.147.16:443
+- name: '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : @𝐃𝐚𝐢𝐥𝐲_𝐂𝐨𝐧𝐟𝐢𝐠𝐬 2'
+  type: ss
+  server: 193.151.160.18
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : @𝐃𝐚𝐢𝐥𝐲_𝐂𝐨𝐧𝐟𝐢𝐠𝐬'
+- name: '@meliproxyy 2'
+  type: ss
+  server: 202.50.253.36
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#@meliproxyy'
+- name: 🇺🇸 United States (US) - Unknown | 103.133.1.38:443 2 2
+  type: ss
+  server: 103.133.1.38
+  port: 443
+  udp: true
+  cipher: none
+  password: 3e96ef7d-8637-42c2-ac73-75182196e755
+  plugin: plugin=v2ray-plugin;mode=websocket;path=3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560;host=mfvpn.fuchen.indevs.in;tls#🇺🇸
+    United States (US) - Unknown | 103.133.1.38:443 2
+- name: 🇺🇸 United States (US) - Unknown | 199.181.197.38:443 2
+  type: ss
+  server: 199.181.197.38
+  port: 443
+  udp: true
+  cipher: none
+  password: 3e96ef7d-8637-42c2-ac73-75182196e755
+  plugin: plugin=v2ray-plugin;mode=websocket;path=3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560;host=mfvpn.fuchen.indevs.in;tls#🇺🇸
+    United States (US) - Unknown | 199.181.197.38:443 2
+- name: 🇹🇼 Taipei, TW · Data Communication… | 220.128.135.193 :8443
+  type: trojan
+  server: 220.128.135.193
+  port: 8443
+  udp: true
+  password: 96983eb4-c8f1-316e-ab00-500014ed3d8b
+  sni: official.taipeicitygovernment.net.ua
+  skip-cert-verify: true
+- name: 🇰🇷 South Korea · MOACK.Co. | ktc1k.xmrthnode.com :24509
+  type: trojan
+  server: ktc1k.xmrthnode.com
+  port: 24509
+  udp: true
+  password: 5bafc1f1-43bc-301c-bf57-53abbf20dabc
+  sni: mpvideo.qpic.cn
+  skip-cert-verify: true
+- name: 🇮🇳 Mumbai, IN · HOSTDZIRE WEB SERVICES… | 103.181.177.88
+  type: ss
+  server: 103.181.177.88
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;path=14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\=2560;host=ylnhh.us.ci#🇮🇳
+    Mumbai, IN · HOSTDZIRE WEB SERVICES… | 103.181.177.88
+- name: 🇺🇸 United States · GoDaddy.com | 50.62.90.16
+  type: ss
+  server: 50.62.90.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\=2560;host=ylnhh.us.ci;tls#🇺🇸
+    United States · GoDaddy.com | 50.62.90.16
+- name: 🇨🇦 Toronto, CA · DigitalOcean | 138.197.141.58
+  type: ss
+  server: 138.197.141.58
+  port: 8080
+  udp: true
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇹🇼 New Taipei City, TW · Data Communication… | a07.taipeicitygovernment.if.ua
+  type: trojan
+  server: a07.taipeicitygovernment.if.ua
+  port: 3462
+  udp: true
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  sni: 45.32.28.232
+- name: 🇺🇸 United States · GoDaddy.com | 104.238.70.16
+  type: ss
+  server: 104.238.70.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;host=ylnhh.us.ci;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\=2560;tls;mux=0#🇺🇸
+    United States · GoDaddy.com | 104.238.70.16
+- name: 🇸🇬 Singapore, SG · Hetzner Online | aio.unlimited.biz.id
+  type: ss
+  server: aio.unlimited.biz.id
+  port: 443
+  udp: true
+  cipher: none
+  password: f282b878-8711-45a1-8c69-5564172123c1
+- name: 🇨🇳 Shenzhen, CN · Zhengzhou Fastidc… | ja262.magiclampcloud.cn :59443·trojan·#6
+  type: trojan
+  server: ja262.magiclampcloud.cn
+  port: 59443
+  udp: true
+  password: ce9e02e876e32eca66d901eb4d07461c
+  sni: ja262.magiclampcloud.cn
+- name: 🇺🇸 US · United Stat… · 198.71.18… · 04367A4AF54E
+  type: ss
+  server: 198.71.188.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;host=ylnhh.us.ci;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed=2560;tls=true#🇺🇸
+    US · United Stat… · 198.71.18… · 04367A4AF54E
+- name: 🇺🇸 US · United Stat… · 45.40.154… · 9F7093530692
+  type: ss
+  server: 45.40.154.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;host=ylnhh.us.ci;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\=2560;tls#🇺🇸
+    US · United Stat… · 45.40.154… · 9F7093530692
+- name: 🇭🇰 HK · Hong Kong    · 20.255.74… · 497AE5B39CA3
+  type: trojan
+  server: 20.255.74.102
+  port: 443
+  udp: true
+  password: 8aab51da-6b67-4bd2-b6e6-5ab3008cf53e
+  sni: jp.iamnotagoodman.com
+  skip-cert-verify: true
+- name: 🇺🇸 US · Marietta     · 198.23.22… · 1A73C8B7BBC2
+  type: trojan
+  server: 198.23.229.250
+  port: 443
+  udp: true
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  sni: rc6.freeguard.org
+  skip-cert-verify: true
+- name: 🇺🇸 US · Dallas       · 156.146.3… · ED44F38A51CE
+  type: ss
+  server: 156.146.38.169
+  port: 443
+  udp: true
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇺🇸 US · United Stat… · 198.12.14… · 8B8639F7540D
+  type: ss
+  server: 198.12.144.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\=2560;host=ylnhh.us.ci;tls#🇺🇸
+    US · United Stat… · 198.12.14… · 8B8639F7540D
+- name: 🇫🇷 FR · France       · 51.195.21… · 4317A6A63573
+  type: trojan
+  server: 51.195.219.173
+  port: 443
+  udp: true
+  password: 0f5e6d9a-49af-4bc0-b04b-503102382144
+  sni: ukt1.sshocean.net
+  skip-cert-verify: true
+- name: 🇮🇩 ID · Indonesia    · 103.67.79… · BD5AB8B1A6CF
+  type: trojan
+  server: 103.67.79.156
+  port: 443
+  udp: true
+  password: af4b064a9c39472fb34ad8b113acdc6b
+  sni: 103.67.79.156
+  skip-cert-verify: true
+- name: 🇮🇷 IR · Iran         · 185.188.1… · 14A6B429DCBF
+  type: ss
+  server: 185.188.105.11
+  port: 443
+  udp: true
+  cipher: none
+  password: RSzEIkk2EsHEAVj15N5E/A==
+- name: 🇳🇱 NL · Amsterdam    · 177.3.212… · C9BAD4478147
+  type: trojan
+  server: 177.3.212.215
+  port: 443
+  udp: true
+  password: j8HSz13mcSpcbzQD-jxhNt3T99NLzgMB
+  sni: nl4.275.axolab.org
+- name: 🇭🇰 HK · Hong Kong    · 119.246.1… · B9A38D60F283
+  type: trojan
+  server: 119.246.1.143
+  port: 443
+  udp: true
+  password: BxceQaOe
+  sni: 119.246.1.143
+  skip-cert-verify: true
+- name: 🇬🇧 United Kingdom (GB) - Unknown | 82.110.60.9:19999 2
+  type: ss
+  server: 82.110.60.9
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#🇬🇧 United Kingdom (GB) - Unknown | 82.110.60.9:19999 2'
+- name: 🇬🇧 United Kingdom (GB) - Unknown | 178.83.185.156:8080 2
+  type: ss
+  server: 178.83.185.156
+  port: 8080
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  plugin: '#🇬🇧 United Kingdom (GB) - Unknown | 178.83.185.156:8080 2'
+- name: 🇺🇸 United States (US) - Chicago | 138.199.42.68:8080
+  type: ss
+  server: 138.199.42.68
+  port: 8080
+  udp: true
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  plugin: '#🇺🇸 United States (US) - Chicago | 138.199.42.68:8080'
+- name: 🇺🇸 United States (US) - Seattle | 138.199.43.159:8080
+  type: ss
+  server: 138.199.43.159
+  port: 8080
+  udp: true
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  plugin: '#🇺🇸 United States (US) - Seattle | 138.199.43.159:8080'
+- name: v2go | 🇿🇦 ZA | SS | 6
+  type: ss
+  server: 185.230.230.18
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#v2go | 🇿🇦 ZA | SS | 6'
+- name: 🇺🇸 美国 | ss | 202
+  type: ss
+  server: 193.151.160.9
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#🇺🇸 美国 | ss | 202'
+- name: 🇮🇹 Italy (IT) - Milan | 202.50.253.54:19999 2
+  type: ss
+  server: 202.50.253.54
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: type=tcp#🇮🇹 Italy (IT) - Milan | 202.50.253.54:19999 2
+- name: CA 6
+  type: ss
+  server: 104.18.41.190
+  port: 443
+  udp: true
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+- name: CA 14
+  type: ss
+  server: cf.877774.xyz
+  port: 443
+  udp: true
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+- name: CA 9
+  type: ss
+  server: 104.19.177.137
+  port: 2096
+  udp: true
+  cipher: none
+  password: 0195c476-63f8-7232-ac42-0ac1eaabe934
+  plugin: plugin=v2ray-plugin;tls;mux=0;mode=websocket;path=/192.168.1.1-443;host=ss1.pages.dev#CA
+- name: NL
+  type: ss
+  server: 5.253.189.215
+  port: 443
+  udp: true
+  cipher: none
+  password: 3e96ef7d-8637-42c2-ac73-75182196e755
+  plugin: plugin=v2ray-plugin;mode=websocket;path=3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560;host=mfvpn.fuchen.indevs.in;tls#NL
+- name: CA 4
+  type: ss
+  server: 172.66.42.200
+  port: 8443
+  udp: true
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  plugin: plugin=v2ray-plugin;mode=websocket;path=/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560;host=woshinidie-et3.pages.dev;tls#CA
+- name: CR
+  type: ss
+  server: 190.93.246.16
+  port: 443
+  udp: true
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: plugin=v2ray-plugin;mode=websocket;path=/14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed\=2560;host=ylnhh.us.ci#CR
+- name: CA 8
+  type: ss
+  server: 172.64.152.216
+  port: 443
+  udp: true
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+- name: CA
+  type: ss
+  server: 162.159.36.5
+  port: 443
+  udp: true
+  cipher: none
+  password: 79960b0b-7d31-4263-8915-6511b0e137a8
+- name: US 8
+  type: ss
+  server: 138.124.111.115
+  port: 443
+  udp: true
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  plugin: plugin=v2ray-plugin;mode=websocket;host=woshinidie-et3.pages.dev;path=/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560;tls;mux=0#US
+- name: MY
+  type: ss
+  server: 96.126.190.196
+  port: 443
+  udp: true
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  plugin: plugin=v2ray-plugin;mode=websocket;path=/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560;host=woshinidie-et3.pages.dev;tls#MY
+- name: SG
+  type: ss
+  server: 47.82.155.79
+  port: 8443
+  udp: true
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  plugin: plugin=v2ray-plugin;mode=websocket;path=/59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed\=2560;host=woshinidie-et3.pages.dev;tls#SG
+- name: v2go | 🇺🇸 US | SS | 207
+  type: ss
+  server: 193.151.160.9
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#v2go | 🇺🇸 US | SS | 207'
+- name: v2go | 🇿🇦 ZA | SS | 94
+  type: ss
+  server: 185.230.230.18
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#v2go | 🇿🇦 ZA | SS | 94'
+- name: 🇳🇱 荷兰 | ss | 84
+  type: ss
+  server: 5.253.189.215
+  port: 443
+  udp: true
+  cipher: none
+  password: 3e96ef7d-8637-42c2-ac73-75182196e755
+  plugin: plugin=v2ray-plugin;mode=websocket;host=mfvpn.fuchen.indevs.in;path=3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560;tls;mux=0#🇳🇱
+    荷兰 | ss | 84
+- name: 🇳🇱 Netherlands - The Netherlands | 193.29.139.235:443
+  type: ss
+  server: 193.29.139.235
+  port: 443
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  plugin: '#🇳🇱 Netherlands - The Netherlands | 193.29.139.235:443'
+- name: trojan-1854022211
+  type: trojan
+  server: tyy129.magiclampcloud.com
+  port: 59443
+  udp: true
+  password: d41f645df853df801ce2b6edec20aa16
+  sni: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+- name: v2go | 🇪🇸 ES | SS | 21
+  type: ss
+  server: 202.50.253.45
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#v2go | 🇪🇸 ES | SS | 21'
+- name: 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 2
+  type: trojan
+  server: ja304.magiclampcloud.cn
+  port: 59443
+  udp: true
+  password: 06cf12a7fab279375e55e2f0cfdef381
+  sni: ja304.magiclampcloud.cn
+- name: v2go | 🇪🇸 ES | SS | 30
+  type: ss
+  server: 202.50.253.45
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#v2go | 🇪🇸 ES | SS | 30'
+- name: 🇮🇳 India - Mumbai | 152.67.8.205:80 109
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 🇮🇳IN-152.67.8.205-0205 | 0.0MB
+  security: auto
+- name: 🇺🇸 United States - Phoenix | 66.163.112.142:443
+  type: trojan
+  server: 66.163.112.142
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 66.163.112.142
+  skip-cert-verify: true
+- name: '[128675]'
+  type: ss
+  server: 102.133.165.160
+  port: 16233
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  plugin: type=tcp#[128675]
+- name: 美国(yudou99.com 玉豆分享) 3
+  type: ss
+  server: 202.50.253.54
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#美国(yudou99.com 玉豆分享)'
+- name: 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 25
+  type: trojan
+  server: ja304.magiclampcloud.cn
+  port: 59443
+  udp: true
+  password: 5649c062bf0b037bee58842aa4b2a568
+  sni: ja304.magiclampcloud.cn
+  skip-cert-verify: true
+- name: '@GozargahAzad| 2'
+  type: ss
+  server: 193.29.139.168
+  port: 8080
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  plugin: Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad#@GozargahAzad|
+- name: 🇸🇬 新加坡 | ss | 19
+  type: ss
+  server: 149.88.106.73
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#🇸🇬 新加坡 | ss | 19'
+- name: 🇬🇧 United Kingdom - Unknown | 82.38.31.206:8080 2
+  type: ss
+  server: 82.38.31.206
+  port: 8080
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇺🇸 美国 | ss | 194
+  type: ss
+  server: 149.40.57.134
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#🇺🇸 美国 | ss | 194'
+- name: 🇸🇬 新加坡 | ss | 23
+  type: ss
+  server: 149.88.106.73
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#🇸🇬 新加坡 | ss | 23'
+- name: 🇸🇬 新加坡 | ss | 42
+  type: ss
+  server: 149.88.106.73
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#🇸🇬 新加坡 | ss | 42'
+- name: 🇨🇿 捷克 | ss | 01
+  type: ss
+  server: 194.87.233.93
+  port: 46190
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: 2Ef8X21WALqK7H6N8A78j5WYtzZ999PP8rF8DaLsb5LLyDLQpf5dGVAjdA3mj1wudigKXTt5heYU9jmaBbfxXBJJAqhPHkxe
+  plugin: '#🇨🇿 捷克 | ss | 01'
+- name: 'Channel : @Daily_Configs 2 3'
+  type: ss
+  server: 82.38.31.61
+  port: 8080
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  plugin: '#Channel : @Daily_Configs'
+- name: '@GozargahAzad| 3'
+  type: ss
+  server: 79.127.184.104
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad#@GozargahAzad|
+- name: 🇺🇸 美国 | ss | 388
+  type: ss
+  server: 216.172.144.199
+  port: 40643
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: Xd4G9xn7AgT88msCYC9MZfavMUqd3dWFNAvswi6KfaD9YcexptMbPn4cSECEMzDgvAMomAWJHyweqJer99ssMVYGH6TK8k4c
+  plugin: '#🇺🇸 美国 | ss | 388'
+- name: 🇸🇬210198 | ⚡️Telegram = t.me/LonUp_M
+  type: ss
+  server: 149.88.106.74
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: '#🇸🇬210198 | ⚡️Telegram = t.me/LonUp_M'
+- name: '@GozargahAzad|🇺🇸 2'
+  type: ss
+  server: 38.91.100.39
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad#@GozargahAzad|🇺🇸
+- name: 🇺🇸 United States - Santa Clara | 23.230.52.119:42878 2
+  type: ss
+  server: 23.230.52.119
+  port: 42878
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu
+  plugin: Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad#🇺🇸
+    United States - Santa Clara | 23.230.52.119:42878 2
+- name: 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 13
+  type: trojan
+  server: ja304.magiclampcloud.cn
+  port: 59443
+  udp: true
+  password: 3520ebcc604f430b1abb25129b92ad03
+  sni: ja304.magiclampcloud.cn
+- name: '@GozargahAzad|'
+  type: ss
+  server: 213.176.92.148
+  port: 40647
+  udp: true
+  cipher: aes-256-gcm
+  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
+  plugin: Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad#@GozargahAzad|
+- name: 🇭🇰 Hong Kong SAR China - Hong Kong | 95.40.173.149:443 3
+  type: ss
+  server: 95.40.173.149
+  port: 443
+  udp: true
+  cipher: none
+  password: 3e96ef7d-8637-42c2-ac73-75182196e755
+  plugin: plugin=v2ray-plugin;mode=websocket;path=3e96ef7d-8637-42c2-ac73-75182196e755/?ed\=2560;host=mfvpn.fuchen.indevs.in#🇭🇰
+    Hong Kong SAR China - Hong Kong | 95.40.173.149:443 3
+- name: jgw.dj2|zjl [9986b452c2a2]
+  type: vless
+  server: djj.zjlo.top
+  port: 23169
+  udp: true
+  uuid: f67b1159-a61f-4ae4-9844-0701b716a290
+  cipher: none
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  tls: true
+- name: 🇺🇸 United States - Unknown | sclass-b1.catcat321.com:20028 3
+  type: trojan
+  server: sclass-b1.catcat321.com
+  port: 20028
+  udp: true
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+- name: ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ = @ꜰxxɴᴇᴛ⚡️
+  type: ss
+  server: 130.195.222.215
+  port: 443
+  udp: true
+  cipher: none
+  password: https://t.me/WangCai2🇨🇳
+  plugin: plugin=v2ray-plugin;mode=websocket;path=59fc5f8c-5697-4eb8-acf2-8ae363f203a2/
+- name: '@GozargahAzad|🇺🇸'
+  type: ss
+  server: 137.184.89.151
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad#@GozargahAzad|🇺🇸
+- name: 🇮🇹 Italy - Milan | 202.50.253.90:19999 2
+  type: ss
+  server: 202.50.253.90
+  port: 19999
+  udp: true
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  plugin: udp=1#🇮🇹 Italy - Milan | 202.50.253.90:19999 2
+- name: '[147336]'
+  type: trojan
+  server: equityapartments.com
+  port: 2083
+  udp: true
+  password: RXR0MNWOjvFH
+  sni: raYAnCOnfiG01-dPbXh49m-t1.raYAn-cONfig-01.workERs.dEV
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: raYAnCOnfiG01-dPbXh49m-t1.raYAn-cONfig-01.workERs.dEV
+- name: 🇺🇸US_681|786KB/s|S004-260618 [eb2241b65c7a]
+  type: vmess
+  server: yg6.ygkkk.dpdns.org
+  port: 80
+  udp: true
+  uuid: 3c75a551-81d6-46d0-876d-79519719bb22
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /3c75a551-81d6-46d0-876d-79519719bb22-vm
+    headers:
+      Host: argo.235697.xyz
+  security: auto
+- name: v2go | 🇨🇿 CZ | SS | 518
+  type: ss
+  server: 194.87.233.93
+  port: 46190
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: 2Ef8X21WALqK7H6N8A78j5WYtzZ999PP8rF8DaLsb5LLyDLQpf5dGVAjdA3mj1wudigKXTt5heYU9jmaBbfxXBJJAqhPHkxe
+  plugin: '#v2go | 🇨🇿 CZ | SS | 518'
+- name: 🇨🇳 China - Unknown | tyy129.magiclampcloud.com:59443 8
+  type: trojan
+  server: tyy129.magiclampcloud.com
+  port: 59443
+  udp: true
+  password: 13e6b9f9497485cdedfdc59328e6a8ad
+  sni: tyy129.magiclampcloud.com
+  skip-cert-verify: true
+- name: 🇺🇸 United States - San Diego | 103.224.182.210:443 3
+  type: trojan
+  server: 103.224.182.210
+  port: 443
+  udp: true
+  password: 8008b06e-2d1d-421c-9cdc-20af1f59093a
+  sni: swejs.stablize.top
+  skip-cert-verify: true
+- name: '@filembad'
+  type: ss
+  server: 13.140.86.73
+  port: 1082
+  udp: true
+  cipher: chacha20-ietf-poly1305
+  password: 3QmxWKv5Rp20PZ4PcNQe5Mtp7o7kjKJm
+- name: 🇺🇸 552
+  type: vmess
+  server: US032020.ssgreen.org
+  port: 443
+  udp: true
+  uuid: 0755b20f-361b-4a9c-a1c0-b383becd94b8
+  alterId: 0
+  cipher: auto
+  tls: true
+  network: ws
+  ws-opts:
+    path: /wes
+    headers:
+      Host: US032020.ssgreen.org
+  security: auto
+- name: 🇷🇴 Romania - Bucharest | forumdrun.xubi.org:443 2
+  type: vless
+  server: forumdrun.xubi.org
+  port: 443
+  udp: true
+  uuid: 0f677c30-da27-4e25-a002-a845240adfc6
+  cipher: none
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: SS-XyOr9wL4mqZPuAaGPAaROVy3_CSP6jFtvZemn21g
+    short-id: 'a1b2c3d4e5f60718'
+  tls: true
+  sni: forumdrun.xubi.org
+- name: 🇺🇸 United States - Santa Clara | 167.88.61.175:443 3
+  type: trojan
+  server: 167.88.61.175
+  port: 443
+  udp: true
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 'blog.browseseniorrolesandenhanceyourcareertoday.com#🇺🇸 | تلگرام: @IRJetConfig'
+  skip-cert-verify: true
+proxy-groups:
+- name: PROXY
+  type: select
+  proxies:
+  - AUTO
+  - 🇺🇸 United States (US) - Seattle | 216.106.186.33:443
+  - 🇫🇷 Paris, FR · M247 Europe SRL | 38.180.240.150 :443
+  - 🇺🇸 United States - Unknown | 216.205.52.16:443 3
+  - 🇺🇸 United States - Unknown | 198.12.144.16:443 3
+  - 🇫🇷 France - Unknown | 54.36.174.140:443 2
+  - 🇨🇦 Canada - Toronto | 216.152.147.85:443 11
+  - CN 🇨🇳 | @Raydikalx | ACF667
+  - 🇺🇸 United States - Atlanta | 216.152.156.81:443 10
+  - 🇨🇳 China (CN) - Shenzhen | ja262.magiclampcloud.cn:59443 33
+  - 🇯🇵 Japan - Unknown | 152.175.38.29:2053
+  - 🇺🇸 United States - Atlanta | 149.40.57.135:19999
+  - 🇬🇧 City Of London, GB · Clouvider Limited | 195.54.161.249 :9443·trojan
+  - 🇦🇺 Australia - Sydney | 45.63.30.142:443 2
+  - 🇫🇷 France - Paris | 15.236.134.147:443
+  - برای اتصال دائمی جوین شو☄️ TelegramID ⌲Express_freevpn 🪩
+  - 🇪🇪 Estonia (EE) - Tallinn | checkout.salu.lalibobi.online:443 2
+  - 🇩🇪 Germany - Frankfurt am Main | 4935e4t.de25.h1clayd.click:443 10
+  - 🇸🇪 Sweden - Unknown | 95.143.196.97:443 2
+  - 🇺🇸 United States - Chicago | 216.152.155.59:443 10
+  - 🇷🇺 Moscow, RU · LLC Baxet | 45.147.200.44 :443
+  - 🇬🇧 United Kingdom (GB) - Unknown | 82.38.31.156:8080
+  - 🇱🇻 Latvia - Riga | 185.135.86.175:9033
+  - 🇸🇬 Singapore, SG · Melbikomas UAB | 91.192.81.167 :443·trojan
+  - 🇮🇷 Iran - Unknown | ir1.wufpel.ir:443 2
+  - برای اتصال دائمی جوین شو☄️ TelegramID ⌲Express_freevpn 🪩 2
+  - 🇨🇦 Canada - Unknown | 51.79.85.185:8118
+  - 🇺🇸 United States - Reston | 15.204.246.111:5498
+  - CA 🇨🇦 | @Raydikalx | 3BB0FC
+  - 🇳🇱 Amsterdam, NL · Fz | nl4.275.axolab.org :443·trojan·#3
+  - 🇫🇷 France (FR) - Unknown | 217.182.76.235:443 2
+  - 🇸🇪 Sweden (SE) - Unknown | checkout.skog.lalibobi.online:443
+  - 🇺🇸 Dallas, US · HostPapa | 192.3.107.252 :443
+  - 🇨🇦 Canada - Montreal | 158.51.121.221:19999
+  - 🇫🇷 France - Unknown | 79.137.99.183:19999
+  - 🇸🇬 Singapore - Unknown | 149.88.107.74:19999
+  - CA 🇨🇦 | @Raydikalx | F60DB5
+  - 🇮🇱 Israel - Unknown | 64.177.66.60:8388
+  - 🇩🇪 Germany - Frankfurt am Main | 185.176.204.18:19999 3
+  - 🇩🇪 Germany - Frankfurt am Main | m1.mincreaft.com:5443 3
+  - 🇺🇸 Dallas, US · GTHost | 216.106.179.230
+  - 🇷🇺 Russia (RU) - St Petersburg | 91.240.87.108:443 2
+  - 🇧🇬 Bulgaria - Sofia | 213.183.63.60:9030
+  - 🇷🇺 Russia - Unknown | 130.49.189.158:43558 7
+  - 🇺🇸 United States - Unknown | sclass-b1.catcat321.com:20027 6
+  - 🇪🇸 Spain - Madrid | 5.188.181.201:9019
+  - 🇺🇸 United States - Ashburn | 66.163.122.81:443 2
+  - 🇯🇵 Japan - Tokyo | 45.142.167.70:443
+  - 🇵🇱 Poland - Warsaw | 217.30.10.70:9060
+  - 🇩🇪 Germany - Düsseldorf | 193.8.124.54:443
+  - 🇮🇷 Iran - Unknown | 185.188.104.10:443
+  - 🇺🇸 United States - Unknown | 103.133.1.38:443 2
+  - 🇳🇱 Netherlands - Amsterdam | 78.142.194.38:443
+  - 🇦🇺 Sydney, AU · xTom Pty | au-3.tr202605.com :443·trojan
+  - 🇸🇬 Singapore, SG · Datacamp Limited | 149.88.23.207 :18000·vmess·#3
+  - 🇬🇧 United Kingdom - City of London | 38.114.120.221:19999
+  - 🇺🇸 United States - Unknown | 45.40.147.16:443 3
+  - 🇳🇬 Lagos, NG · Melbikomas UAB | 103.97.91.17 :443
+  - 🇬🇧 United Kingdom - City of London | 3.10.212.107:443
+  - CA 🇨🇦 | @Raydikalx | 213182
+  - 🇺🇸 United States - Atlanta | 38.22.17.214:19999
+  - 🇩🇪 Germany - Frankfurt am Main | 193.108.119.83:19999
+  - '@meliproxyy'
+  - 🇸🇬 Singapore, SG · Zenlayer | 128.1.186.73
+  - 🇦🇹 Vienna, AT · EDIS | 86.106.119.23 :443
+  - 🇬🇧 United Kingdom · Datacamp Limited | 82.110.60.9 :19999
+  - 🇸🇬 Singapore - Unknown | 173.234.15.84:48994 2
+  - 🇬🇧 United Kingdom - City of London | 185.49.34.54:443
+  - 🇩🇪 Germany - Frankfurt am Main | 57.129.76.233:19999
+  - 🇺🇸 United States - Unknown | 141.193.213.21:8443 10
+  - 🇺🇸 United States - Washington | 172.111.38.72:19999
+  - 🇦🇪 United Arab Emirates - Unknown | 151.241.19.29:19999
+  - 🇮🇷 Iran - Unknown | dkstatics-public.digikala.com:443
+  - 🇯🇵 Tokyo, JP · xTom Japan Corporation | ty-3.tr202605.com :443·trojan
+  - 🇺🇸 美国 | trojan | 282
+  - 🇩🇪 德国 | ss | 177
+  - KZ 🇰🇿 | @Raydikalx | A0A8A9
+  - 🇺🇸 United States - Phoenix | 66.163.112.76:443 5
+  - 🇺🇸 United States - Unknown | 160.153.137.16:443 2
+  - 🇺🇸 547
+  - 🇭🇰 Hong Kong SAR China - Hong Kong | 47.244.120.197:44867 10
+  - 'Channel : @Daily_Configs 2 2'
+  - 🇰🇷 South Korea - Seoul | 158.247.253.243:443 2
+  - 🇩🇪 Germany - Frankfurt am Main | 193.108.118.247:19999
+  - 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.77.248 :39495·vmess·#3
+  - 🇺🇸 United States - Unknown | 50.62.195.16:443 3
+  - 🇺🇸 United States - Dallas | 156.146.38.169:443 2
+  - 🇺🇸US_564|177KB/s|M001-260618 [12f1c9c16511]
+  - 🇵🇱 Poland - Warsaw | hl-freedom-1.undef.network:443 2
+  - 🇳🇱210299 | ⚡️Telegram = t.me/SOSkeyNET
+  - 🇬🇧 United Kingdom - London | 51.38.65.155:443 100
+  - 🇺🇸 United States - Miami | 169.197.140.218:443
+  - 🇺🇸US_336|358KB/s|S004-260618 [921f80d48e94]
+  - 🇱🇹 Lithuania - Unknown | 195.238.126.20:9012
+  - 🇺🇸 United States - Chicago | 216.152.155.131:443 10
+  - 🇹🇼 Taiwan (TW) - New Taipei City | 60.250.152.229:8443 2
+  - 🇫🇷 France - Unknown | 51.83.61.102:8080 2
+  - 🇭🇰 Hong Kong SAR China - Hong Kong | 16.106.7.232:20086 2
+  - 🇳🇱 Netherlands - Amsterdam | 123466.ru:26032 10
+  - 🇨🇭 Switzerland - Zurich | 208.69.78.158:443
+  - ❓Other_5|241KB/s|B007-260618 [0a330acd2e12]
+  - 🇺🇸 United States - Detroit | 170.101.101.112:443 11
+  - 🇮🇳 India - Mumbai | 152.67.8.205:80 107
+  - 🇺🇸 United States - Atlanta | 38.22.17.219:19999
+  - 🇺🇸 United States - Unknown | 198.12.144.16:443
+  - 🇵🇱 Poland - Warsaw | 217.30.10.70:9001
+  - 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 38 2
+  - 🇯🇵 Tokyo, JP · Amazon.com | v2jp.k1.ssnss.live :44184·trojan
+  - 🇩🇪 Germany - Frankfurt am Main | 193.108.119.29:443 2
+  - 🇨🇳 China - Shenzhen | ja262.magiclampcloud.cn:59443 91
+  - 🇬🇧 United Kingdom - Unknown | 82.38.31.178:8080 3
+  - 🇺🇸 United States - Santa Clara | 167.88.61.175:443 10
+  - 🇺🇸 United States - Ashburn | 66.163.122.25:443 10
+  - 🇺🇸 Dallas, US · Datacamp Limited | 156.146.38.168 :443
+  - 🇵🇱 Poland - Warsaw | hl-freedom-0.undef.network:443 2
+  - 🇮🇷 Iran · Noavaran Fan Avazeh Co.… | 185.188.104.11
+  - 🇫🇷 France - Unknown | 162.19.192.89:16641 2
+  - 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 38
+  - 🇺🇸 United States - Seattle | 216.106.186.66:443
+  - 🇨🇳 China - Unknown | tyy129.magiclampcloud.com:59443 17
+  - 🇺🇸 United States - Unknown | 104.238.70.16:443 2
+  - 🇯🇵 Japan - Osaka | 161.33.38.253:443 2
+  - trojan-1935612269
+  - 🇩🇪 Germany - Frankfurt am Main | 147.45.66.60:43000 2
+  - 🇮🇹 Italy - Palermo | 91.201.65.122:9002
+  - 🇺🇸 United States - Unknown | sclass-b1.catcat321.com:20051
+  - ✅ t.me/bigAVPN ایران آزاد 👑
+  - 🇩🇪 Germany - Frankfurt am Main | 57.129.83.85:19999
+  - 'Channel : @Daily_Configs 3 2'
+  - 🇨🇳 China - Unknown | tyy129.magiclampcloud.com:59443 35
+  - ❓未知丨yoyapai.com 3
+  - 🇳🇱 Netherlands - Amsterdam | 66.163.127.154:443 2
+  - 🇮🇳 India - Mumbai | 152.67.8.205:80 132
+  - 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 8
+  - 🇺🇸 United States - Chicago | 216.152.155.23:443 2
+  - 🇧🇬BG_4|2.5MB/s|A004-260618 [f12ae6151539]
+  - 🇨🇭 Switzerland - Zurich | 208.69.78.60:443 2
+  - 🇮🇹 Italy - Palermo | 91.201.65.122:9059
+  - 🇺🇸 United States - Ashburn | 66.163.122.26:443 2
+  - 🇬🇧 United Kingdom (GB) - Unknown | 82.38.31.194:8080
+  - 🇳🇱 Netherlands - The Netherlands | 193.29.139.212:8080
+  - 🇨🇭 Switzerland - Zurich | 208.69.78.19:443 3
+  - 🇮🇹 Italy - Milan | 202.50.253.36:19999 2
+  - 🇭🇰 Hong Kong SAR China - Hong Kong | 47.244.120.197:23026 10
+  - 🇯🇵 Japan (JP) - Tokyo | 18.179.31.199:443 5
+  - 🇸🇬 SG · Singapore    · 43.160.19… · 7560D79A4AA5
+  - 🇨🇦 Toronto, CA · DigitalOcean | 159.203.22.227 :443
+  - 🇺🇸 United States - Ashburn | 66.163.122.7:443 2
+  - 🇮🇳 India - Mumbai | 152.67.8.205:80 101
+  - 🇬🇧 United Kingdom (GB) - London | 51.38.65.155:443 100 2
+  - 🇬🇧 United Kingdom (GB) - Unknown | 82.38.31.39:8080
+  - 🇪🇸 Spain - Madrid | 5.188.181.201:9042
+  - 🇨🇳 China - Unknown | tyy129.magiclampcloud.com:59443 23
+  - 🇳🇱 Amsterdam, NL · DigitalOcean | 142.93.226.128 :443·trojan
+  - '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : @𝐃𝐚𝐢𝐥𝐲_𝐂𝐨𝐧𝐟𝐢𝐠𝐬'
+  - 🇺🇸 United States - Seattle | 216.106.186.82:443 2
+  - 🇰🇷 South Korea - Incheon | 43.200.1.24:443 2
+  - 未知 SS-08 | free-nodes
+  - 🇸🇬211011 | ⚡️Telegram = t.me/LonUp_M
+  - 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 6
+  - 🇬🇧 United Kingdom (GB) - London | 51.38.65.155:443 100
+  - 🇬🇧 United Kingdom · Greenhost BV | 82.38.31.217
+  - 🇭🇰 Hong Kong SAR China (HK) - Hong Kong | 83.229.121.78:8443 2
+  - 🇩🇪 Germany (DE) - Frankfurt am Main | m1.mincreaft.com:5443 2
+  - 🇮🇳IN_1|300KB/s|A004-260618 [b3f3a42347ba]
+  - 🇹🇼 Taiwan - Taichung | 211.20.156.191:28133 2
+  - 美国(yudou99.com 玉豆分享) 2
+  - 🇨🇳 China - Unknown | tyy129.magiclampcloud.com:59443 8 2
+  - 🇫🇮 Finland - Helsinki | nnnmjju.131.pp.ua:443 2
+  - 🇸🇬 Singapore - Unknown | pleased-sawfly.rooster465.autos:443
+  - 🌐 Unknown - Unknown | ktc1k.xmrthnode.com:41305
+  - 🇩🇪 Germany - Frankfurt am Main | 185.176.204.18:19999 4
+  - 🇬🇧 United Kingdom · Greenhost BV | 82.38.31.61
+  - 🇰🇷 KR · South Korea  · ktc1k      · 73EB615ED13E
+  - 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 42
+  - EPODONIOS 8
+  - EPODONIOS 19
+  - EPODONIOS 15 2
+  - EPODONIOS 22
+  - 🇨🇳 China · No.293,Wanbao Avenue | tyy129.magiclampcloud.com :59443·trojan·#23
+  - vmess-1854106572
+  - 🇺🇸 Phoenix, US · Global Connectivity… | 212.18.104.164
+  - 🇳🇱 Netherlands - Amsterdam | 5.253.189.215:443 2
+  - 🇺🇸 United States (US) - Unknown | 104.238.70.16:443 3
+  - 🇺🇸 United States (US) - Unknown | 45.40.147.16:443 2
+  - 🇺🇸 United States (US) - Unknown | 45.40.154.16:443 4
+  - 🇺🇸 United States (US) - Unknown | 50.62.88.16:443 2
+  - 🇨🇦 Canada (CA) - Toronto | 138.197.141.58:8080
+  - 🇳🇱 Netherlands (NL) - Amsterdam | 5.253.189.215:443 3
+  - 🇸🇬 Singapore (SG) - Unknown | 68.183.235.240:8080
+  - 🇺🇸 United States (US) - Unknown | 103.133.1.38:443 2
+  - 🇿🇦 Johannesburg, ZA · Microsoft Corporation | 102.133.165.160
+  - 🇨🇳 China (CN) - Unknown | tyy129.magiclampcloud.com:59443 36
+  - 🇺🇸 United States (US) - Unknown | 45.40.154.16:443
+  - 🇺🇸 United States (US) - Unknown | 50.62.90.16:443 4
+  - 🇺🇸 United States (US) - Unknown | 50.62.195.16:443
+  - 🇮🇳 India (IN) - Mumbai | 103.181.177.88:443
+  - 🇺🇸 United States (US) - Unknown | 198.12.144.16:443 3
+  - 🇺🇸 United States (US) - Unknown | 45.40.147.16:443
+  - '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : @𝐃𝐚𝐢𝐥𝐲_𝐂𝐨𝐧𝐟𝐢𝐠𝐬 2'
+  - '@meliproxyy 2'
+  - 🇺🇸 United States (US) - Unknown | 103.133.1.38:443 2 2
+  - 🇺🇸 United States (US) - Unknown | 199.181.197.38:443 2
+  - 🇹🇼 Taipei, TW · Data Communication… | 220.128.135.193 :8443
+  - 🇰🇷 South Korea · MOACK.Co. | ktc1k.xmrthnode.com :24509
+  - 🇮🇳 Mumbai, IN · HOSTDZIRE WEB SERVICES… | 103.181.177.88
+  - 🇺🇸 United States · GoDaddy.com | 50.62.90.16
+  - 🇨🇦 Toronto, CA · DigitalOcean | 138.197.141.58
+  - 🇹🇼 New Taipei City, TW · Data Communication… | a07.taipeicitygovernment.if.ua
+  - 🇺🇸 United States · GoDaddy.com | 104.238.70.16
+  - 🇸🇬 Singapore, SG · Hetzner Online | aio.unlimited.biz.id
+  - 🇨🇳 Shenzhen, CN · Zhengzhou Fastidc… | ja262.magiclampcloud.cn :59443·trojan·#6
+  - 🇺🇸 US · United Stat… · 198.71.18… · 04367A4AF54E
+  - 🇺🇸 US · United Stat… · 45.40.154… · 9F7093530692
+  - 🇭🇰 HK · Hong Kong    · 20.255.74… · 497AE5B39CA3
+  - 🇺🇸 US · Marietta     · 198.23.22… · 1A73C8B7BBC2
+  - 🇺🇸 US · Dallas       · 156.146.3… · ED44F38A51CE
+  - 🇺🇸 US · United Stat… · 198.12.14… · 8B8639F7540D
+  - 🇫🇷 FR · France       · 51.195.21… · 4317A6A63573
+  - 🇮🇩 ID · Indonesia    · 103.67.79… · BD5AB8B1A6CF
+  - 🇮🇷 IR · Iran         · 185.188.1… · 14A6B429DCBF
+  - 🇳🇱 NL · Amsterdam    · 177.3.212… · C9BAD4478147
+  - 🇭🇰 HK · Hong Kong    · 119.246.1… · B9A38D60F283
+  - 🇬🇧 United Kingdom (GB) - Unknown | 82.110.60.9:19999 2
+  - 🇬🇧 United Kingdom (GB) - Unknown | 178.83.185.156:8080 2
+  - 🇺🇸 United States (US) - Chicago | 138.199.42.68:8080
+  - 🇺🇸 United States (US) - Seattle | 138.199.43.159:8080
+  - v2go | 🇿🇦 ZA | SS | 6
+  - 🇺🇸 美国 | ss | 202
+  - 🇮🇹 Italy (IT) - Milan | 202.50.253.54:19999 2
+  - CA 6
+  - CA 14
+  - CA 9
+  - NL
+  - CA 4
+  - CR
+  - CA 8
+  - CA
+  - US 8
+  - MY
+  - SG
+  - v2go | 🇺🇸 US | SS | 207
+  - v2go | 🇿🇦 ZA | SS | 94
+  - 🇳🇱 荷兰 | ss | 84
+  - 🇳🇱 Netherlands - The Netherlands | 193.29.139.235:443
+  - trojan-1854022211
+  - v2go | 🇪🇸 ES | SS | 21
+  - 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 2
+  - v2go | 🇪🇸 ES | SS | 30
+  - 🇮🇳 India - Mumbai | 152.67.8.205:80 109
+  - 🇺🇸 United States - Phoenix | 66.163.112.142:443
+  - '[128675]'
+  - 美国(yudou99.com 玉豆分享) 3
+  - 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 25
+  - '@GozargahAzad| 2'
+  - 🇸🇬 新加坡 | ss | 19
+  - 🇬🇧 United Kingdom - Unknown | 82.38.31.206:8080 2
+  - 🇺🇸 美国 | ss | 194
+  - 🇸🇬 新加坡 | ss | 23
+  - 🇸🇬 新加坡 | ss | 42
+  - 🇨🇿 捷克 | ss | 01
+  - 'Channel : @Daily_Configs 2 3'
+  - '@GozargahAzad| 3'
+  - 🇺🇸 美国 | ss | 388
+  - 🇸🇬210198 | ⚡️Telegram = t.me/LonUp_M
+  - '@GozargahAzad|🇺🇸 2'
+  - 🇺🇸 United States - Santa Clara | 23.230.52.119:42878 2
+  - 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 13
+  - '@GozargahAzad|'
+  - 🇭🇰 Hong Kong SAR China - Hong Kong | 95.40.173.149:443 3
+  - jgw.dj2|zjl [9986b452c2a2]
+  - 🇺🇸 United States - Unknown | sclass-b1.catcat321.com:20028 3
+  - ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ = @ꜰxxɴᴇᴛ⚡️
+  - '@GozargahAzad|🇺🇸'
+  - 🇮🇹 Italy - Milan | 202.50.253.90:19999 2
+  - '[147336]'
+  - 🇺🇸US_681|786KB/s|S004-260618 [eb2241b65c7a]
+  - v2go | 🇨🇿 CZ | SS | 518
+  - 🇨🇳 China - Unknown | tyy129.magiclampcloud.com:59443 8
+  - 🇺🇸 United States - San Diego | 103.224.182.210:443 3
+  - '@filembad'
+  - 🇺🇸 552
+  - 🇷🇴 Romania - Bucharest | forumdrun.xubi.org:443 2
+  - 🇺🇸 United States - Santa Clara | 167.88.61.175:443 3
+- name: AUTO
+  type: url-test
+  proxies:
+  - 🇺🇸 United States (US) - Seattle | 216.106.186.33:443
+  - 🇫🇷 Paris, FR · M247 Europe SRL | 38.180.240.150 :443
+  - 🇺🇸 United States - Unknown | 216.205.52.16:443 3
+  - 🇺🇸 United States - Unknown | 198.12.144.16:443 3
+  - 🇫🇷 France - Unknown | 54.36.174.140:443 2
+  - 🇨🇦 Canada - Toronto | 216.152.147.85:443 11
+  - CN 🇨🇳 | @Raydikalx | ACF667
+  - 🇺🇸 United States - Atlanta | 216.152.156.81:443 10
+  - 🇨🇳 China (CN) - Shenzhen | ja262.magiclampcloud.cn:59443 33
+  - v2go | 🇨🇿 CZ | SS | 518
+  - 🇯🇵 Japan - Unknown | 152.175.38.29:2053
+  - 🇺🇸 United States - Atlanta | 149.40.57.135:19999
+  - 🇬🇧 City Of London, GB · Clouvider Limited | 195.54.161.249 :9443·trojan
+  - 🇦🇺 Australia - Sydney | 45.63.30.142:443 2
+  - 🇫🇷 France - Paris | 15.236.134.147:443
+  - برای اتصال دائمی جوین شو☄️ TelegramID ⌲Express_freevpn 🪩
+  - 🇪🇪 Estonia (EE) - Tallinn | checkout.salu.lalibobi.online:443 2
+  - 🇩🇪 Germany - Frankfurt am Main | 4935e4t.de25.h1clayd.click:443 10
+  - 🇸🇪 Sweden - Unknown | 95.143.196.97:443 2
+  - 🇺🇸 United States - Chicago | 216.152.155.59:443 10
+  - 🇷🇺 Moscow, RU · LLC Baxet | 45.147.200.44 :443
+  - 🇬🇧 United Kingdom (GB) - Unknown | 82.38.31.156:8080
+  - 🇱🇻 Latvia - Riga | 185.135.86.175:9033
+  - 🇸🇬 Singapore, SG · Melbikomas UAB | 91.192.81.167 :443·trojan
+  - 🇮🇷 Iran - Unknown | ir1.wufpel.ir:443 2
+  - برای اتصال دائمی جوین شو☄️ TelegramID ⌲Express_freevpn 🪩 2
+  - 🇨🇦 Canada - Unknown | 51.79.85.185:8118
+  - 🇺🇸 United States - Reston | 15.204.246.111:5498
+  - CA 🇨🇦 | @Raydikalx | 3BB0FC
+  - 🇳🇱 Amsterdam, NL · Fz | nl4.275.axolab.org :443·trojan·#3
+  - 🇫🇷 France (FR) - Unknown | 217.182.76.235:443 2
+  - 🇸🇪 Sweden (SE) - Unknown | checkout.skog.lalibobi.online:443
+  - 🇺🇸 Dallas, US · HostPapa | 192.3.107.252 :443
+  - 🇨🇦 Canada - Montreal | 158.51.121.221:19999
+  - 🇫🇷 France - Unknown | 79.137.99.183:19999
+  - 🇸🇬 Singapore - Unknown | 149.88.107.74:19999
+  - 🇨🇳 China - Unknown | tyy129.magiclampcloud.com:59443 8
+  - CA 🇨🇦 | @Raydikalx | F60DB5
+  - 🇮🇱 Israel - Unknown | 64.177.66.60:8388
+  - 🇩🇪 Germany - Frankfurt am Main | 185.176.204.18:19999 3
+  - 🇩🇪 Germany - Frankfurt am Main | m1.mincreaft.com:5443 3
+  - 🇺🇸 United States - San Diego | 103.224.182.210:443 3
+  - 🇺🇸 Dallas, US · GTHost | 216.106.179.230
+  - 🇷🇺 Russia (RU) - St Petersburg | 91.240.87.108:443 2
+  - 🇧🇬 Bulgaria - Sofia | 213.183.63.60:9030
+  - 🇷🇺 Russia - Unknown | 130.49.189.158:43558 7
+  - 🇺🇸 United States - Unknown | sclass-b1.catcat321.com:20027 6
+  - 🇪🇸 Spain - Madrid | 5.188.181.201:9019
+  - 🇺🇸 United States - Ashburn | 66.163.122.81:443 2
+  - 🇯🇵 Japan - Tokyo | 45.142.167.70:443
+  - 🇵🇱 Poland - Warsaw | 217.30.10.70:9060
+  - 🇩🇪 Germany - Düsseldorf | 193.8.124.54:443
+  - 🇮🇷 Iran - Unknown | 185.188.104.10:443
+  - 🇺🇸 United States - Unknown | 103.133.1.38:443 2
+  - 🇳🇱 Netherlands - Amsterdam | 78.142.194.38:443
+  - 🇦🇺 Sydney, AU · xTom Pty | au-3.tr202605.com :443·trojan
+  - '@filembad'
+  - 🇸🇬 Singapore, SG · Datacamp Limited | 149.88.23.207 :18000·vmess·#3
+  - 🇬🇧 United Kingdom - City of London | 38.114.120.221:19999
+  - 🇺🇸 United States - Unknown | 45.40.147.16:443 3
+  - 🇳🇬 Lagos, NG · Melbikomas UAB | 103.97.91.17 :443
+  - 🇬🇧 United Kingdom - City of London | 3.10.212.107:443
+  - CA 🇨🇦 | @Raydikalx | 213182
+  - 🇺🇸 United States - Atlanta | 38.22.17.214:19999
+  - 🇩🇪 Germany - Frankfurt am Main | 193.108.119.83:19999
+  - '@meliproxyy'
+  - 🇸🇬 Singapore, SG · Zenlayer | 128.1.186.73
+  - 🇦🇹 Vienna, AT · EDIS | 86.106.119.23 :443
+  - 🇬🇧 United Kingdom · Datacamp Limited | 82.110.60.9 :19999
+  - 🇸🇬 Singapore - Unknown | 173.234.15.84:48994 2
+  - 🇬🇧 United Kingdom - City of London | 185.49.34.54:443
+  - 🇩🇪 Germany - Frankfurt am Main | 57.129.76.233:19999
+  - 🇺🇸 552
+  - 🇺🇸 United States - Unknown | 141.193.213.21:8443 10
+  - 🇺🇸 United States - Washington | 172.111.38.72:19999
+  - 🇦🇪 United Arab Emirates - Unknown | 151.241.19.29:19999
+  - 🇮🇷 Iran - Unknown | dkstatics-public.digikala.com:443
+  - 🇯🇵 Tokyo, JP · xTom Japan Corporation | ty-3.tr202605.com :443·trojan
+  - 🇺🇸 美国 | trojan | 282
+  - 🇩🇪 德国 | ss | 177
+  - KZ 🇰🇿 | @Raydikalx | A0A8A9
+  - 🇺🇸 United States - Phoenix | 66.163.112.76:443 5
+  - 🇺🇸 United States - Unknown | 160.153.137.16:443 2
+  - 🇷🇴 Romania - Bucharest | forumdrun.xubi.org:443 2
+  - 🇺🇸 547
+  - 🇺🇸 United States - Santa Clara | 167.88.61.175:443 3
+  - 🇭🇰 Hong Kong SAR China - Hong Kong | 47.244.120.197:44867 10
+  - 'Channel : @Daily_Configs 2 2'
+  - 🇰🇷 South Korea - Seoul | 158.247.253.243:443 2
+  - 🇩🇪 Germany - Frankfurt am Main | 193.108.118.247:19999
+  - 🇺🇸 Phoenix, US · Oracle Corporation | 129.146.77.248 :39495·vmess·#3
+  - 🇺🇸 United States - Unknown | 50.62.195.16:443 3
+  - 🇺🇸 United States - Dallas | 156.146.38.169:443 2
+  - 🇺🇸US_564|177KB/s|M001-260618 [12f1c9c16511]
+  - 🇵🇱 Poland - Warsaw | hl-freedom-1.undef.network:443 2
+  - 🇳🇱210299 | ⚡️Telegram = t.me/SOSkeyNET
+  - 🇬🇧 United Kingdom - London | 51.38.65.155:443 100
+  - 🇺🇸 United States - Miami | 169.197.140.218:443
+  - 🇺🇸US_336|358KB/s|S004-260618 [921f80d48e94]
+  - 🇱🇹 Lithuania - Unknown | 195.238.126.20:9012
+  - 🇺🇸 United States - Chicago | 216.152.155.131:443 10
+  - 🇹🇼 Taiwan (TW) - New Taipei City | 60.250.152.229:8443 2
+  - 🇫🇷 France - Unknown | 51.83.61.102:8080 2
+  - 🇭🇰 Hong Kong SAR China - Hong Kong | 16.106.7.232:20086 2
+  - 🇳🇱 Netherlands - Amsterdam | 123466.ru:26032 10
+  - 🇨🇭 Switzerland - Zurich | 208.69.78.158:443
+  - ❓Other_5|241KB/s|B007-260618 [0a330acd2e12]
+  - 🇺🇸 United States - Detroit | 170.101.101.112:443 11
+  - 🇮🇳 India - Mumbai | 152.67.8.205:80 107
+  - 🇺🇸 United States - Atlanta | 38.22.17.219:19999
+  - 🇺🇸 United States - Unknown | 198.12.144.16:443
+  - 🇵🇱 Poland - Warsaw | 217.30.10.70:9001
+  - 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 38 2
+  - 🇯🇵 Tokyo, JP · Amazon.com | v2jp.k1.ssnss.live :44184·trojan
+  - 🇩🇪 Germany - Frankfurt am Main | 193.108.119.29:443 2
+  - 🇨🇳 China - Shenzhen | ja262.magiclampcloud.cn:59443 91
+  - 🇬🇧 United Kingdom - Unknown | 82.38.31.178:8080 3
+  - 🇺🇸 United States - Santa Clara | 167.88.61.175:443 10
+  - 🇺🇸 United States - Ashburn | 66.163.122.25:443 10
+  - 🇺🇸 Dallas, US · Datacamp Limited | 156.146.38.168 :443
+  - 🇵🇱 Poland - Warsaw | hl-freedom-0.undef.network:443 2
+  - 🇮🇷 Iran · Noavaran Fan Avazeh Co.… | 185.188.104.11
+  - 🇫🇷 France - Unknown | 162.19.192.89:16641 2
+  - 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 38
+  - 🇺🇸 United States - Seattle | 216.106.186.66:443
+  - 🇨🇳 China - Unknown | tyy129.magiclampcloud.com:59443 17
+  - 🇺🇸 United States - Unknown | 104.238.70.16:443 2
+  - 🇯🇵 Japan - Osaka | 161.33.38.253:443 2
+  - trojan-1935612269
+  - 🇩🇪 Germany - Frankfurt am Main | 147.45.66.60:43000 2
+  - 🇮🇹 Italy - Palermo | 91.201.65.122:9002
+  - 🇺🇸 United States - Unknown | sclass-b1.catcat321.com:20051
+  - ✅ t.me/bigAVPN ایران آزاد 👑
+  - 🇩🇪 Germany - Frankfurt am Main | 57.129.83.85:19999
+  - 'Channel : @Daily_Configs 3 2'
+  - 🇨🇳 China - Unknown | tyy129.magiclampcloud.com:59443 35
+  - ❓未知丨yoyapai.com 3
+  - 🇳🇱 Netherlands - Amsterdam | 66.163.127.154:443 2
+  - 🇮🇳 India - Mumbai | 152.67.8.205:80 132
+  - 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 8
+  - 🇺🇸 United States - Chicago | 216.152.155.23:443 2
+  - 🇧🇬BG_4|2.5MB/s|A004-260618 [f12ae6151539]
+  - 🇨🇭 Switzerland - Zurich | 208.69.78.60:443 2
+  - 🇮🇹 Italy - Palermo | 91.201.65.122:9059
+  - 🇺🇸 United States - Ashburn | 66.163.122.26:443 2
+  - 🇬🇧 United Kingdom (GB) - Unknown | 82.38.31.194:8080
+  - 🇳🇱 Netherlands - The Netherlands | 193.29.139.212:8080
+  - 🇨🇭 Switzerland - Zurich | 208.69.78.19:443 3
+  - 🇮🇹 Italy - Milan | 202.50.253.36:19999 2
+  - 🇭🇰 Hong Kong SAR China - Hong Kong | 47.244.120.197:23026 10
+  - 🇯🇵 Japan (JP) - Tokyo | 18.179.31.199:443 5
+  - 🇸🇬 SG · Singapore    · 43.160.19… · 7560D79A4AA5
+  - 🇨🇦 Toronto, CA · DigitalOcean | 159.203.22.227 :443
+  - 🇺🇸 United States - Ashburn | 66.163.122.7:443 2
+  - 🇮🇳 India - Mumbai | 152.67.8.205:80 101
+  - 🇬🇧 United Kingdom (GB) - London | 51.38.65.155:443 100 2
+  - 🇬🇧 United Kingdom (GB) - Unknown | 82.38.31.39:8080
+  - 🇪🇸 Spain - Madrid | 5.188.181.201:9042
+  - 🇨🇳 China - Unknown | tyy129.magiclampcloud.com:59443 23
+  - 🇳🇱 Amsterdam, NL · DigitalOcean | 142.93.226.128 :443·trojan
+  - '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : @𝐃𝐚𝐢𝐥𝐲_𝐂𝐨𝐧𝐟𝐢𝐠𝐬'
+  - 🇺🇸 United States - Seattle | 216.106.186.82:443 2
+  - 🇰🇷 South Korea - Incheon | 43.200.1.24:443 2
+  - 未知 SS-08 | free-nodes
+  - 🇸🇬211011 | ⚡️Telegram = t.me/LonUp_M
+  - 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 6
+  - 🇬🇧 United Kingdom (GB) - London | 51.38.65.155:443 100
+  - 🇬🇧 United Kingdom · Greenhost BV | 82.38.31.217
+  - 🇭🇰 Hong Kong SAR China (HK) - Hong Kong | 83.229.121.78:8443 2
+  - 🇩🇪 Germany (DE) - Frankfurt am Main | m1.mincreaft.com:5443 2
+  - 🇮🇳IN_1|300KB/s|A004-260618 [b3f3a42347ba]
+  - 🇹🇼 Taiwan - Taichung | 211.20.156.191:28133 2
+  - 美国(yudou99.com 玉豆分享) 2
+  - 🇨🇳 China - Unknown | tyy129.magiclampcloud.com:59443 8 2
+  - 🇫🇮 Finland - Helsinki | nnnmjju.131.pp.ua:443 2
+  - 🇸🇬 Singapore - Unknown | pleased-sawfly.rooster465.autos:443
+  - 🌐 Unknown - Unknown | ktc1k.xmrthnode.com:41305
+  - 🇩🇪 Germany - Frankfurt am Main | 185.176.204.18:19999 4
+  - 🇬🇧 United Kingdom · Greenhost BV | 82.38.31.61
+  - 🇰🇷 KR · South Korea  · ktc1k      · 73EB615ED13E
+  - 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 42
+  - EPODONIOS 8
+  - EPODONIOS 19
+  - EPODONIOS 15 2
+  - EPODONIOS 22
+  - 🇨🇳 China · No.293,Wanbao Avenue | tyy129.magiclampcloud.com :59443·trojan·#23
+  - vmess-1854106572
+  - 🇺🇸 Phoenix, US · Global Connectivity… | 212.18.104.164
+  - 🇳🇱 Netherlands - Amsterdam | 5.253.189.215:443 2
+  - 🇺🇸 United States (US) - Unknown | 104.238.70.16:443 3
+  - 🇺🇸 United States (US) - Unknown | 45.40.147.16:443 2
+  - 🇺🇸 United States (US) - Unknown | 45.40.154.16:443 4
+  - 🇺🇸 United States (US) - Unknown | 50.62.88.16:443 2
+  - 🇨🇦 Canada (CA) - Toronto | 138.197.141.58:8080
+  - 🇳🇱 Netherlands (NL) - Amsterdam | 5.253.189.215:443 3
+  - 🇸🇬 Singapore (SG) - Unknown | 68.183.235.240:8080
+  - 🇺🇸 United States (US) - Unknown | 103.133.1.38:443 2
+  - 🇿🇦 Johannesburg, ZA · Microsoft Corporation | 102.133.165.160
+  - 🇨🇳 China (CN) - Unknown | tyy129.magiclampcloud.com:59443 36
+  - 🇺🇸 United States (US) - Unknown | 45.40.154.16:443
+  - 🇺🇸 United States (US) - Unknown | 50.62.90.16:443 4
+  - 🇺🇸 United States (US) - Unknown | 50.62.195.16:443
+  - 🇮🇳 India (IN) - Mumbai | 103.181.177.88:443
+  - 🇺🇸 United States (US) - Unknown | 198.12.144.16:443 3
+  - 🇺🇸 United States (US) - Unknown | 45.40.147.16:443
+  - '𝐂𝐡𝐚𝐧𝐧𝐞𝐥 : @𝐃𝐚𝐢𝐥𝐲_𝐂𝐨𝐧𝐟𝐢𝐠𝐬 2'
+  - '@meliproxyy 2'
+  - 🇺🇸 United States (US) - Unknown | 103.133.1.38:443 2 2
+  - 🇺🇸 United States (US) - Unknown | 199.181.197.38:443 2
+  - 🇹🇼 Taipei, TW · Data Communication… | 220.128.135.193 :8443
+  - 🇰🇷 South Korea · MOACK.Co. | ktc1k.xmrthnode.com :24509
+  - 🇮🇳 Mumbai, IN · HOSTDZIRE WEB SERVICES… | 103.181.177.88
+  - 🇺🇸 United States · GoDaddy.com | 50.62.90.16
+  - 🇨🇦 Toronto, CA · DigitalOcean | 138.197.141.58
+  - 🇹🇼 New Taipei City, TW · Data Communication… | a07.taipeicitygovernment.if.ua
+  - 🇺🇸 United States · GoDaddy.com | 104.238.70.16
+  - 🇸🇬 Singapore, SG · Hetzner Online | aio.unlimited.biz.id
+  - 🇨🇳 Shenzhen, CN · Zhengzhou Fastidc… | ja262.magiclampcloud.cn :59443·trojan·#6
+  - 🇺🇸 US · United Stat… · 198.71.18… · 04367A4AF54E
+  - 🇺🇸 US · United Stat… · 45.40.154… · 9F7093530692
+  - 🇭🇰 HK · Hong Kong    · 20.255.74… · 497AE5B39CA3
+  - 🇺🇸 US · Marietta     · 198.23.22… · 1A73C8B7BBC2
+  - 🇺🇸 US · Dallas       · 156.146.3… · ED44F38A51CE
+  - 🇺🇸 US · United Stat… · 198.12.14… · 8B8639F7540D
+  - 🇫🇷 FR · France       · 51.195.21… · 4317A6A63573
+  - 🇮🇩 ID · Indonesia    · 103.67.79… · BD5AB8B1A6CF
+  - 🇮🇷 IR · Iran         · 185.188.1… · 14A6B429DCBF
+  - 🇳🇱 NL · Amsterdam    · 177.3.212… · C9BAD4478147
+  - 🇭🇰 HK · Hong Kong    · 119.246.1… · B9A38D60F283
+  - 🇬🇧 United Kingdom (GB) - Unknown | 82.110.60.9:19999 2
+  - 🇬🇧 United Kingdom (GB) - Unknown | 178.83.185.156:8080 2
+  - 🇺🇸 United States (US) - Chicago | 138.199.42.68:8080
+  - 🇺🇸 United States (US) - Seattle | 138.199.43.159:8080
+  - v2go | 🇿🇦 ZA | SS | 6
+  - 🇺🇸 美国 | ss | 202
+  - 🇮🇹 Italy (IT) - Milan | 202.50.253.54:19999 2
+  - CA 6
+  - CA 14
+  - CA 9
+  - NL
+  - CA 4
+  - CR
+  - CA 8
+  - CA
+  - US 8
+  - MY
+  - SG
+  - v2go | 🇺🇸 US | SS | 207
+  - v2go | 🇿🇦 ZA | SS | 94
+  - 🇳🇱 荷兰 | ss | 84
+  - 🇳🇱 Netherlands - The Netherlands | 193.29.139.235:443
+  - trojan-1854022211
+  - v2go | 🇪🇸 ES | SS | 21
+  - 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 2
+  - v2go | 🇪🇸 ES | SS | 30
+  - 🇮🇳 India - Mumbai | 152.67.8.205:80 109
+  - 🇺🇸 United States - Phoenix | 66.163.112.142:443
+  - '[128675]'
+  - 美国(yudou99.com 玉豆分享) 3
+  - 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 25
+  - '@GozargahAzad| 2'
+  - 🇸🇬 新加坡 | ss | 19
+  - 🇬🇧 United Kingdom - Unknown | 82.38.31.206:8080 2
+  - 🇺🇸 美国 | ss | 194
+  - 🇸🇬 新加坡 | ss | 23
+  - 🇸🇬 新加坡 | ss | 42
+  - 🇨🇿 捷克 | ss | 01
+  - 'Channel : @Daily_Configs 2 3'
+  - '@GozargahAzad| 3'
+  - 🇺🇸 美国 | ss | 388
+  - 🇸🇬210198 | ⚡️Telegram = t.me/LonUp_M
+  - '@GozargahAzad|🇺🇸 2'
+  - 🇺🇸 United States - Santa Clara | 23.230.52.119:42878 2
+  - 🇨🇳 China - Unknown | ja304.magiclampcloud.cn:59443 13
+  - '@GozargahAzad|'
+  - 🇭🇰 Hong Kong SAR China - Hong Kong | 95.40.173.149:443 3
+  - jgw.dj2|zjl [9986b452c2a2]
+  - 🇺🇸 United States - Unknown | sclass-b1.catcat321.com:20028 3
+  - ᴛᴇʟᴇɢʀᴀᴍ ɪᴅ = @ꜰxxɴᴇᴛ⚡️
+  - '@GozargahAzad|🇺🇸'
+  - 🇮🇹 Italy - Milan | 202.50.253.90:19999 2
+  - '[147336]'
+  - 🇺🇸US_681|786KB/s|S004-260618 [eb2241b65c7a]
+  url: https://www.gstatic.com/generate_204
+  interval: 120
+  tolerance: 50
+  timeout: 8000
+  lazy: false
+rules:
+- MATCH,PROXY
